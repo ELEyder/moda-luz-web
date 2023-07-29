@@ -1,0 +1,69 @@
+body {
+    background-color: white;
+    margin: 0px;
+  }
+/* TABLA */
+table.index{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    background-color: yellow;
+}
+table.index tr{
+    border: black 2px solid;
+}
+table.index td{
+    border: black 2px solid;
+    padding: 0px;
+}
+img.logo {
+    width: 100px;
+    max-width: 100px;
+    height: auto;
+}
+/* CABECERA */
+th.logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+th.titulo {
+    width: 100%;
+    background-color: white;
+    padding: 0px 100px 0px 0px;
+}
+/* FILA 2 */
+td.indice {
+    background-color: yellow;
+    height: 50px;
+}
+td.indice a{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* FILA 3 */
+td.fondo {
+    background-color: white;
+}
+td.descripcion{
+    width: 50%;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+td.fondo img{
+    width: 100%;
+}
+/* PIE */
+td.pie{
+    background-color: yellow;
+    height: 100px;
+}
+td.pie a{
+    color: black;
+    text-decoration: none;
+}

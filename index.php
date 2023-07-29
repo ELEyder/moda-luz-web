@@ -5,45 +5,41 @@
 ?>
 <html>
     <head>
-
-    <title>MARKET PERU S.A</title>
-    <meta name="Author" content="Daniel Melendez Tafur">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+        <title>MARKET PERU S.A</title>
+        <meta name="Author" content="Daniel Melendez Tafur">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
-
     <body>
-    <table class="tabla1" border="1px" width=900px height=100px>
-        <tr>
-            <td><img src="fotos/Logo Market.jpg"  width='100' heigth='100'></td>
-            <th> MARKET PERU S.A <br>Av. Paseo de la República 3455 Lima<br>Teléfono: 4678900</th>
-        </tr>
-    </table>
-    <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
-            <th>
-            <a href='index.php'>Inicio</a> -
-            <a href='nosotros.php'>Quieres Somos</a> -
-            <a href='catalogo.php'>Catalogo</a>
-            </th>
-        </tr>
-    </table>
-<table class='tabla3'  border='1px' width='900px' height='160px'>
-<tr>
-    <th>
-<img src='fotos/Market.jpg' width='400'><br>
-</th>
-<td>
-DONDE COMPRAR ES UN PLACER….!
-</td>
-</tr>
-</table>
-        <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
-            <th>Derechos Reservados 2019<br>
-            Correo: marketperu@mkp.com.pe
-</th>
-        </tr>
-    </table>
+        <table class="index">
+            <tr>
+                <th class="logo">
+                    <img class="logo" src="fotos/logoMarket.png">
+                </th>
+                <th class="titulo" COLSPAN="3" >
+                    <p>MARKET PERU S.A</p>
+                    <p>Av. Paseo de la República 3455 Lima</p>
+                    <p>Teléfono: 4678900</p>
+                </th>
+            </tr>
+            <tr>
+                <td class="indice" COLSPAN="4">
+                    <a href='index.php'>Inicio</a> - <a href='nosotros.php'>Quieres Somos</a> - <a href='catalogo.php'>Catalogo</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="fondo" COLSPAN="2">
+                    <img src='fotos/market.png'>
+                </td>
+                <td class="descripcion" COLSPAN="2">
+                    <p>DONDE COMPRAR ES UN PLACER….!</p>
+                </td>
+            </tr>
+            <tr>
+                <td class ="pie" COLSPAN="4">
+                    <p>Derechos Reservados 2019</p>
+                    <p>Correo: <a href="mailto:eyderhuayta26@gmail.com">marketperu@mkp.com.pe</a></p>
+                </tr>
+            </tr>
+        </table>
     </body>
 </html>

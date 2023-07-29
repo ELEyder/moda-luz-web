@@ -15,7 +15,7 @@
     <body>
     <table class="tabla1" border="1px" width=900px height=100px>
         <tr>
-            <td><img src="fotos/Logo Market.jpg"  width='100' heigth='100'></td>
+            <td><img src="fotos/logoMarket.png"  width='100' heigth='100'></td>
             <th> MARKET PERU S.A <br>Av. Paseo de la República 3455 Lima<br>Teléfono: 4678900</th>
         </tr>
     </table>
@@ -35,13 +35,13 @@
         say("<tr>");
         $row = mysqli_fetch_array($rs,MYSQLI_ASSOC);
         say("<th>");
-        say("<img src='fotos/".$row['Imagen'].".jpg' width='100' heigth='100'><br>");
+        say("<img src='fotos/".$row['imagen'].".png' width='100' heigth='100'><br>");
         say( "<a href='catalogo.php'>Regresar</a>");
         say("</th>");
         say("<td>");
-        say("Precio: ".$row["Precio"]."<br>");
+        say("Precio: ".$row["precio"]."<br>");
         say("N° Pedido: 119 <br>");
-        say("Unidad Medida: ".$row["Descripcion"]);
+        say("Unidad Medida: ".$row["descripcion"]);
         say("</td>");
         say("</tr>");
         say("</table>");

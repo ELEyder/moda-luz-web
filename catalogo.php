@@ -1,61 +1,47 @@
-<?php //Iniciar la programacion en PHP
-    //Habilitar el archivo de funciones egcc.php
-    require_once("egcc.php");
-    //Iniciar sesion de trabajo
+<?php
+    require_once("db/mysql.php");
+    require_once("funciones/funciones.php");
 ?>
 <html>
     <head>
-
-    <title>MARKET PERU S.A</title>
-    <meta name="Author" content="Daniel Melendez Tafur">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+        <title>MARKET PERU S.A</title>
+        <meta name="Author" content="Daniel Melendez Tafur">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
-
     <body>
-    <table class="tabla1" border="1px" width=900px height=100px>
-        <tr>
-            <td><img src="fotos/logoMarket.png"  width='100' heigth='100'></td>
-            <th> MARKET PERU S.A <br>Av. Paseo de la República 3455 Lima<br>Teléfono: 4678900</th>
-        </tr>
-    </table>
-    <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
-            <th>CATALOGO DE PRODUCTOS</th>
-        </tr>
-    </table>
-    <?php
-    $cn=fnConnect($msg);
-    if(!$cn){
-        fnShowMsg("Error",$msg);//mostrar mensaje de error
-        return; //salir
-    }else{
-        $rs = mysqli_query($cn,"select * from productos");
-        say("<table class='tabla2'  border='1px' width='900px' height='160px'>");
-        say("<tr>");
-        $cont = 0;
-        while($row = mysqli_fetch_array($rs,MYSQLI_ASSOC)){
-            $cont++;
-            if ($cont == 4){
-                say("</tr>");
+        <?php
+            fnMostrarCabecera();
+        ?>
+            <tr>
+                <td class="indice" COLSPAN="4">
+                <p>CATALOGO DE PRODUCTOS</p>
+                </td>
+            </tr>
+            <?php
+            $cn=fnConnect($msg);
+            if(!$cn){
+                fnShowMsg("Error",$msg);//mostrar mensaje de error
+                return; //salir
+            }else{
+                $rs = mysqli_query($cn,"select * from productos");
                 say("<tr>");
+                $cont = 0;
+                while($row = mysqli_fetch_array($rs,MYSQLI_ASSOC)){
+                    
+                    say("<td>");
+                    say("<img src='fotos/".$row['imagen'].".png' width='100' heigth='100'><br>");
+                    say("<a href='".$row["imagen"].".php'>".$row["nombre"]."</a>");
+                    say("</td>");
+                    $cont++;
+                    if ($cont == 3){
+                        say("</tr>");
+                        say("<tr>");
+                    }
+                }
+                say("</tr>");
             }
-            say("<td>");
-            say("<img src='fotos/".$row['imagen'].".png' width='100' heigth='100'><br>");
-            say( "<a href='".$row["imagen"].".php'>".$row["nombre"]."</a>");
-            say("</td>");
-        }
-        say("</tr>");
-        say("</table>");
-    }
-    ?>
-        <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
-            <th>Derechos Reservados 2019<br>
-            Correo: marketperu@mkp.com.pe
-</th>
-        </tr>
-    </table>
-    <a href='index.php'>Regresar</a>
+            fnMostrarPie();
+            ?>
+        <a href='index.php'>Regresar</a>
     </body>
 </html>

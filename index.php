@@ -1,19 +1,22 @@
 <?php
-    require_once("db/mysql.php");
     require_once("funciones/funciones.php");
 ?>
-<html>
+<html lang="es">
     <head>
         <title>MARKET PERU S.A</title>
         <meta name="Author" content="Eyder Huayta Tantavilca">
+        <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
-            <?php
-                fnMostrarCabecera();
-            ?>
+        <?php
+            fnMostrarCabecera();
+        ?>
         <main class="contenido">
-            <p><a href='index.php'>Inicio</a> | <a href='nosotros.php'>Quieres Somos</a> | <a href='catalogo.php'>Catalogo</a></p>
+            <p> <a class="inicio" href='index.php'>Inicio</a> |
+            <a class="nosotros" href='nosotros.php'>Quieres Somos</a> |
+            <a class="catalogo" href='catalogo.php'>Catalogo</a></p>
             <img src='fotos/market.png'>
         </main> 
             <?php

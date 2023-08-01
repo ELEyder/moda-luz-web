@@ -1,5 +1,5 @@
 <?php
-    require_once("db/mysql.php");
+    require_once("funciones/mysql.php");
     require_once("funciones/funciones.php");
 ?>
 <html>

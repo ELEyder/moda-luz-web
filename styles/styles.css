@@ -20,7 +20,7 @@ img.logo {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-right: 200px;
+    padding-right: 150px;
 }
 .titulo h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -35,19 +35,32 @@ main.contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 main.contenido a{
     text-decoration: none;
-    color: black;
+    color: white;
+}
+a.inicio:hover{
+    font-weight: bold;
+    color: rgb(76, 0, 255);
+}
+a.nosotros:hover{
+    font-weight: bold;
+    color: rgb(76, 0, 255);
+}
+a.catalogo:hover{
+    font-weight: bold;
+    color: rgb(76, 0, 255);
 }
 main.contenido img {
     width: 50%;
-    border-radius: 5%;
+    border-radius: 50px;
     margin-bottom: 50px;
+    border: 10px solid white;
 }
 
 /* PIE */
@@ -58,7 +71,8 @@ footer.contenido{
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-}footer.contenido p{
+}
+footer.contenido p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;

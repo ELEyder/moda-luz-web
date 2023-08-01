@@ -13,22 +13,22 @@
             fnMostrarCabecera();
         ?>
     <main class="contenido-nosotros">
-        <div>
+        <div class="titulo-desc">
             <p>¿Qui&eacute;nes Somos?</p>
         </div>
-        <div>
+        <div class="desc">
             <img class="nosotros" src='fotos/nosotros.png'><br>
-            <p class="descripcion">
+            <p class="desc">
                 Somos una empresa dedicada a la venta de productos de
                 primera necesidad, con gran experiencia de servirlo con
                 calidad al 100%. Estamos comprometidos con usted que
                 es nuestro cliente importante y estamos a su servicio para
                 cualquier consulta de poder satisfacer sus requerimientos.
-                Market Perú tiene más de 20 años sirviendo a nuestros
+                Mercado Morado tiene más de 20 años sirviendo a nuestros
                 clientes con el mejor equipo certificado con calidad.
             </p>
         </div>
-        <a href='index.php'>Regresar</a>
+        <a class="regresar" href='index.php'>Regresar</a>
     </main>
     <?php
         fnMostrarPie();

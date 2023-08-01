@@ -8,7 +8,7 @@
 
     <title>MARKET PERU S.A</title>
     <meta name="Author" content="Daniel Melendez Tafur">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     </head>
 

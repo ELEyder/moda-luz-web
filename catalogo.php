@@ -16,7 +16,7 @@
             fnMostrarCabecera();
         ?>
     <main class="contenido">
-        <div class="titulo">
+        <div class="subtitulo">
             <p>CATALOGO DE PRODUCTOS</p>
         </div>
         <div class="productos">
@@ -30,7 +30,7 @@
                 $imagen = $row['imagen'];
                 $img = "img/" . $imagen . ".png";
                 echo '<div class="producto">
-                <img src="'.$img.'" alt="'.$imagen.'">
+                <img class="producto" src="'.$img.'" alt="'.$imagen.'">
                 <h1>'.$nombre.'</h1>
                 <p>Unidad: '.$desc.'</p>
                 <p>'.$precio.'</p>

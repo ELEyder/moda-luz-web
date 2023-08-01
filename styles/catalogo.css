@@ -2,3 +2,15 @@ main.contenido {
     display: flex;
     flex-direction: column;
 }
+.subtitulo {
+    font-size: 25px;
+}
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img.producto {
+    width: 30px;
+    border-radius: 0px;
+}

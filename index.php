@@ -17,7 +17,7 @@
             <p> <a class="inicio" href='index.php'>Inicio</a> |
             <a class="nosotros" href='nosotros.php'>Quieres Somos</a> |
             <a class="catalogo" href='catalogo.php'>Catalogo</a></p>
-            <img src='img/market.png'>
+            <img class ="market"src='img/market.png'>
         </main> 
             <?php
                 fnMostrarPie();

@@ -56,7 +56,7 @@ a.catalogo:hover{
     font-weight: bold;
     color: rgb(76, 0, 255);
 }
-main.contenido img {
+img.market {
     width: 50%;
     border-radius: 50px;
     margin-bottom: 50px;

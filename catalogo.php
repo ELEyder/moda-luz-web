@@ -32,7 +32,7 @@
                 while($row = mysqli_fetch_array($rs,MYSQLI_ASSOC)){
                     
                     say("<td>");
-                    say("<img src='fotos/".$row['imagen'].".png' width='100' heigth='100'><br>");
+                    say("<img src='img/".$row['imagen'].".png' width='100' heigth='100'><br>");
                     say("<a href='".$row["imagen"].".php'>".$row["nombre"]."</a>");
                     say("</td>");
                     $cont++;

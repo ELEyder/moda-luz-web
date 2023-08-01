@@ -3,7 +3,7 @@ function fnMostrarCabecera(){
 	echo '
 		<header class="contenido">
 			<div> 
-            	<img class="logo" src="fotos/logo.png"> 
+            	<img class="logo" src="img/logo.png"> 
         	</div> 
         	<div class="titulo"> 
             	<h1>MERCADO MORADO S.A.</h1>

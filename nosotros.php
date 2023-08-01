@@ -19,7 +19,7 @@
             <p>¿Qui&eacute;nes Somos?</p>
         </div>
         <div class="desc">
-            <img class="nosotros" src='fotos/nosotros.png'><br>
+            <img class="nosotros" src='img/nosotros.png'><br>
             <p class="desc">
                 Somos una empresa dedicada a la venta de productos de
                 primera necesidad, con gran experiencia de servirlo con

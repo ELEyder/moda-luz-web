@@ -13,14 +13,24 @@ function fnConnect( &$msg ){
 	}
 	return $cn;
 }
+function fnSelectProductos(){
+	// LLamar a la funcion de conexión que retorna la conexion
+	$cn=fnConnect($msg);
+	// Si no hay conexión se muestra error y se regresa
+	if(!$cn){
+		fnShowMsg("Error",$msg); // Mostrar mensaje de error
+		return; // Salir
+	}
+	// Si no
+	else{
+		// Realiza la petición a la base de datos y devuelte la tabla
+		$tablaSQL = mysqli_query($cn,"select * from productos");
+		return $tablaSQL;
+	}
+}
 function fnShowMsg($title,$msg){
-    say("<table align='center' width='300' border='1'>");
-    say("<tr>");
-    say("<th>$title</th>");
-    say("</tr>");
-    say("<tr>");
-	say("<td>$msg</td>");    
-    say("</tr>");
-    say("</table>");
+    echo("<th>$title</th>"); 
+	echo("<td>$msg</td>");
+	echo("<a href='index.php'>Regresar</a>");
 }
 ?>

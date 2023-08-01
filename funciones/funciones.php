@@ -20,7 +20,4 @@ function fnMostrarPie(){
 	</footer>
 		';
 }
-function say($cad){
-	echo $cad . "\n";//Concatenar y hacer Salto de linea
-}
 ?>

@@ -8,7 +8,7 @@
         <meta name="author" content="Eyder Huayta Tantavilca">
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" href="styles/">k
+        <link rel="stylesheet" href="styles/catalogo.css">
         <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
@@ -16,32 +16,25 @@
             fnMostrarCabecera();
         ?>
     <main class="contenido">
-        <div>
+        <div class="titulo">
             <p>CATALOGO DE PRODUCTOS</p>
         </div>
-        <div>
+        <div class="productos">
         <?php
-            $cn=fnConnect($msg);
-            if(!$cn){
-                fnShowMsg("Error",$msg);//mostrar mensaje de error
-                return; //salir
-            }else{
-                $rs = mysqli_query($cn,"select * from productos");
-                say("<tr>");
-                $cont = 0;
-                while($row = mysqli_fetch_array($rs,MYSQLI_ASSOC)){
-                    
-                    say("<td>");
-                    say("<img src='img/".$row['imagen'].".png' width='100' heigth='100'><br>");
-                    say("<a href='".$row["imagen"].".php'>".$row["nombre"]."</a>");
-                    say("</td>");
-                    $cont++;
-                    if ($cont == 3){
-                        say("</tr>");
-                        say("<tr>");
-                    }
-                }
-                say("</tr>");
+            $tablaSQL = fnSelectProductos();
+            // Extraemos todas las filas de la tabla
+            while ($row = mysqli_fetch_array($tablaSQL,MYSQLI_ASSOC)) {
+                $nombre = $row['nombre'];
+                $desc = $row['descripcion'];
+                $precio = $row['precio'];
+                $imagen = $row['imagen'];
+                $img = "img/" . $imagen . ".png";
+                echo '<div class="producto">
+                <img src="'.$img.'" alt="'.$imagen.'">
+                <h1>'.$nombre.'</h1>
+                <p>Unidad: '.$desc.'</p>
+                <p>'.$precio.'</p>
+            </div>';
             }
             ?>
         </div>

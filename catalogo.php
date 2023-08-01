@@ -5,19 +5,22 @@
 <html>
     <head>
         <title>MARKET PERU S.A</title>
-        <meta name="Author" content="Daniel Melendez Tafur">
+        <meta name="author" content="Eyder Huayta Tantavilca">
+        <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/nosotros.css">
+        <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
         <?php
             fnMostrarCabecera();
         ?>
-            <tr>
-                <td class="indice" COLSPAN="4">
-                <p>CATALOGO DE PRODUCTOS</p>
-                </td>
-            </tr>
-            <?php
+    <main class="contenido">
+        <div>
+            <p>CATALOGO DE PRODUCTOS</p>
+        </div>
+        <div>
+        <?php
             $cn=fnConnect($msg);
             if(!$cn){
                 fnShowMsg("Error",$msg);//mostrar mensaje de error
@@ -40,6 +43,10 @@
                 }
                 say("</tr>");
             }
+            ?>
+        </div>
+    </main>
+            <?php
             fnMostrarPie();
             ?>
         <a href='index.php'>Regresar</a>

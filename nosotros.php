@@ -3,10 +3,12 @@
 ?>
 <html>
     <head>
-        <title>MARKET PERU S.A</title>
-        <meta name="Author" content="Daniel Melendez Tafur">
+    <title>MARKET PERU S.A</title>
+        <meta name="author" content="Eyder Huayta Tantavilca">
+        <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" type="text/css" href="styles/nosotros.css">
+        <link rel="shortcut icon" href="icon.png">
     </head>
     <body>
         <?php

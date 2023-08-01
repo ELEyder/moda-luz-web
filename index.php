@@ -4,7 +4,7 @@
 <html lang="es">
     <head>
         <title>MARKET PERU S.A</title>
-        <meta name="Author" content="Eyder Huayta Tantavilca">
+        <meta name="author" content="Eyder Huayta Tantavilca">
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="shortcut icon" href="icon.png">

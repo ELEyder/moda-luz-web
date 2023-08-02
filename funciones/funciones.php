@@ -1,10 +1,10 @@
 <?php
-function fnMostrarCabecera(){
+function fnMostrarCabecera($ruta){
 	echo '
 		<header class="contenido">
 			<div> 
-            	<img class="logo" src="img/logo.png"> 
-        	</div> 
+            	<img class="logo" src="'. $ruta .'"> 
+        	</div>
         	<div class="titulo"> 
             	<h1>MERCADO MORADO S.A.</h1>
             	<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 

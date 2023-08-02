@@ -6,14 +6,12 @@
 ?>
 <html>
     <head>
-
-    <title>MERCADO MORADO S.A</title>
-    <meta name="author" content="Eyder Huayta Tantavilca">
-    <meta name="description" content="Mercado en linea de alimentos.">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <link rel="stylesheet" type="text/css" href="../styles/detalles.css">
-    <link rel="shortcut icon" href="../icon.png">
-
+        <title>MERCADO MORADO S.A</title>
+        <meta name="author" content="Eyder Huayta Tantavilca">
+        <meta name="description" content="Mercado en linea de alimentos.">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/detalles.css">
+        <link rel="shortcut icon" href="../icon.png">
     </head>
 
     <body>
@@ -21,37 +19,40 @@
         //HEAD
         fnMostrarCabecera("../img/logo.png");
     ?>
-    <main>
+        <main class="contenido">
         <?php
         //MAIN
         $cn = fnConnect($msg);
         if(!$cn){
-        fnShowMsg("Error",$msg);//mostrar mensaje de error
-        return; //salir
-    }else{
-        $consulta = "select * from productos where idProducto=" . $_GET['id'];
-        $rs = mysqli_query($cn,$consulta);
-        echo("<table class='tabla3'  border='1px' width='900px' height='160px'>");
-        echo("<tr>");
-        $row = mysqli_fetch_array($rs,MYSQLI_ASSOC);
-        echo("<th>");
-        echo("<img src='../img/".$row['imagen'].".png' width='100' heigth='100'><br>");
-        echo( "<a href='catalogo.php'>Regresar</a>");
-        echo("</th>");
-        echo("<td>");
-        echo("Precio: ".$row["precio"]."<br>");
-        echo("N° Pedido: 115 <br>");
-        echo("Unidad Medida: ".$row["descripcion"]);
-        echo("</td>");
-        echo("</tr>");
-        echo("</table>");
-    }
+            fnShowMsg("Error",$msg);//mostrar mensaje de error
+            return; //salir
+        }else{
+            $tablaSQL = fnConsultaSelect("select * from productos where idProducto =". $_GET['id']);
+            $row = mysqli_fetch_array($tablaSQL,MYSQLI_ASSOC);
+            $id = $row['idProducto'];
+            $nombre = $row['nombre'];
+            $desc = $row['descripcion'];
+            $precio = $row['precio'];
+            $imagen = $row['imagen'];
+            $img = "../img/" . $imagen . ".png";
+            echo '<div class="producto">
+                <div class="imagen">
+                    <img class="producto" src="'.$img.'" alt="'.$imagen.'">
+                </div>
+                <div class="texto">
+                    <h1 class="producto">'.$nombre.'</h1>
+                    <p class="producto">Unidad: '.$desc.'</p>
+                    <p class="producto">Precio: S/.'.$precio.'</p>
+                    <a class="boton"href="../index.php">Comprar Producto</a>
+                </div>
+            </div>';
+        }
     ?>
-        <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
+    <a class="regresar" href="catalogo.php">Regresar al Catálogo</a>
         </main>
-            <th>Derechos Reservados 2019<br>
-            Correo: marketperu@mkp.com.pe
+            <?php
+                fnMostrarPie();
+            ?>
 </th>
         </tr>
     </table>

@@ -21,7 +21,7 @@
         </div>
         <div class="productos">
         <?php
-            $tablaSQL = fnConsultaSelect("");
+            $tablaSQL = fnConsultaSelect("select * from productos");
             // Extraemos todas las filas de la tabla
             while ($row = mysqli_fetch_array($tablaSQL,MYSQLI_ASSOC)) {
                 $id = $row['idProducto'];

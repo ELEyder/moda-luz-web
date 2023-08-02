@@ -13,7 +13,8 @@ function fnConnect( &$msg ){
 	}
 	return $cn;
 }
-function fnConsultaSelect(){
+
+function fnConsultaSelect($consulta){
 	// LLamar a la funcion de conexión que retorna la conexion
 	$cn=fnConnect($msg);
 	// Si no hay conexión se muestra error y se regresa
@@ -24,11 +25,11 @@ function fnConsultaSelect(){
 	// Si no
 	else{
 		// Realiza la petición a la base de datos y devuelte la tabla
-		$tablaSQL = mysqli_query($cn,"select * from productos");
+		$tablaSQL = mysqli_query($cn,$consulta);
 		return $tablaSQL;
 	}
 }
-function fnSelect
+
 function fnShowMsg($title,$msg){
     echo("<th>$title</th>"); 
 	echo("<td>$msg</td>");

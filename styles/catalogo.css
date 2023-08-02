@@ -40,6 +40,7 @@ img.producto {
 }
 a.producto {
     margin: 20px;
+    text-decoration: none;
 }
 a.regresar {
     color: white;

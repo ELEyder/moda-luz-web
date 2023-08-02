@@ -36,6 +36,7 @@ img.producto {
     height: 200px;
     border-radius: 0px;
     border-radius: 20px;
+    padding: 40px;
 }
 a.producto {
     margin: 20px;

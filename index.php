@@ -3,7 +3,7 @@
 ?>
 <html lang="es">
     <head>
-        <title>MARKET PERU S.A</title>
+        <title>MERCADO MORADO S.A</title>
         <meta name="author" content="Eyder Huayta Tantavilca">
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="styles/style.css">

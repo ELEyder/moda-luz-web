@@ -1,30 +1,24 @@
 <?php //Iniciar la programacion en PHP
     //Habilitar el archivo de funciones egcc.php
     require_once("../funciones/mysql.php");
+    require_once("../funciones/funciones.php");
     //Iniciar sesion de trabajo
 ?>
 <html>
     <head>
 
-    <title>MARKET PERU S.A</title>
-    <meta name="Author" content="Daniel Melendez Tafur">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MERCADO MORADO S.A</title>
+    <meta name="author" content="Eyder Huayta Tantavilca">
+    <meta name="description" content="Mercado en linea de alimentos.">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/detalles.css">
+    <link rel="shortcut icon" href="../icon.png">
 
     </head>
 
     <body>
-    <table class="tabla1" border="1px" width=900px height=100px>
-        <tr>
-            <td><img src="fotos/logoMarket.png"  width='100' heigth='100'></td>
-            <th> MARKET PERU S.A <br>Av. Paseo de la República 3455 Lima<br>Teléfono: 4678900</th>
-        </tr>
-    </table>
-    <table class="tabla2"  border="1px" width=900px height=30px> 
-        <tr>
-            <th>CATALOGO DE PRODUCTOS</th>
-        </tr>
-    </table>
     <?php
+        fnMostrarCabecera("../img/logo.png");
     $cn=fnConnect($msg);
     if(!$cn){
         fnShowMsg("Error",$msg);//mostrar mensaje de error

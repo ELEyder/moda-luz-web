@@ -18,9 +18,14 @@
 
     <body>
     <?php
+        //HEAD
         fnMostrarCabecera("../img/logo.png");
-    $cn=fnConnect($msg);
-    if(!$cn){
+    ?>
+    <main>
+        <?php
+        //MAIN
+        $cn = fnConnect($msg);
+        if(!$cn){
         fnShowMsg("Error",$msg);//mostrar mensaje de error
         return; //salir
     }else{
@@ -44,6 +49,7 @@
     ?>
         <table class="tabla2"  border="1px" width=900px height=30px> 
         <tr>
+        </main>
             <th>Derechos Reservados 2019<br>
             Correo: marketperu@mkp.com.pe
 </th>

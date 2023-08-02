@@ -21,7 +21,7 @@
         </div>
         <div class="productos">
         <?php
-            $tablaSQL = fnSelectProductos("../img/logo.png");
+            $tablaSQL = fnConsultaSelect("");
             // Extraemos todas las filas de la tabla
             while ($row = mysqli_fetch_array($tablaSQL,MYSQLI_ASSOC)) {
                 $id = $row['idProducto'];

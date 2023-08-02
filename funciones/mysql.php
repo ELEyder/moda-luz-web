@@ -13,7 +13,7 @@ function fnConnect( &$msg ){
 	}
 	return $cn;
 }
-function fnSelectProductos(){
+function fnConsultaSelect(){
 	// LLamar a la funcion de conexión que retorna la conexion
 	$cn=fnConnect($msg);
 	// Si no hay conexión se muestra error y se regresa
@@ -28,6 +28,7 @@ function fnSelectProductos(){
 		return $tablaSQL;
 	}
 }
+function fnSelect
 function fnShowMsg($title,$msg){
     echo("<th>$title</th>"); 
 	echo("<td>$msg</td>");

@@ -14,10 +14,9 @@
             fnMostrarCabecera("index");
         ?>
         <main class="contenido">
+            <a class="indice" href='pages/catalogo.php'>Catalogo</a>
             <img class ="market"src='img/market.png'>
-            <p>
-                <a class="indice" href='pages/catalogo.php'>Catalogo</a>
-            </p>
+            
         </main>
             <?php
                 fnMostrarPie("index");

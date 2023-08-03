@@ -20,7 +20,6 @@ img.logo {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-right: 150px;
 }
 .titulo h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +61,7 @@ a.indice{
     text-decoration: none;
     color: white;
     text-decoration: none;
+    margin: 10px;
 }
 a.indice:hover{
     font-weight: bold;

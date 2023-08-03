@@ -15,6 +15,12 @@ function fnMostrarCabecera($origen){
             	<h1>MERCADO MORADO S.A.</h1>
             	<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
         	</div>
+			<div class="perfil">
+				<a class="login" href="pages/login.php">
+					<img class="perfil" src="img/perfil.png">
+					Iniciar<br>Sesión
+				</a>
+			</div>
 		</header>
 	';
 }

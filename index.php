@@ -14,11 +14,11 @@
             fnMostrarCabecera("index");
         ?>
         <main class="contenido">
+            <img class ="market"src='img/market.png'>
             <p>
                 <a class="indice" href='pages/catalogo.php'>Catalogo</a>
             </p>
-            <img class ="market"src='img/market.png'>
-        </main> 
+        </main>
             <?php
                 fnMostrarPie("index");
             ?>

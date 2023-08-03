@@ -13,7 +13,7 @@
     </head>
     <body>
         <?php
-            fnMostrarCabecera("../img/logo.png");
+            fnMostrarCabecera("");
         ?>
     <main class="contenido">
         <div class="subtitulo">

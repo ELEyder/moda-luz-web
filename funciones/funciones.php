@@ -1,5 +1,11 @@
 <?php
-function fnMostrarCabecera($ruta){
+function fnMostrarCabecera($origen){
+	if ($origen == "index"){
+		$ruta = "img/logo.png";
+	}
+	else {
+		$ruta = "../img/logo.png";
+	}
 	echo '
 		<header class="contenido">
 			<div> 
@@ -12,11 +18,18 @@ function fnMostrarCabecera($ruta){
 		</header>
 	';
 }
-function fnMostrarPie(){
+function fnMostrarPie($origen = "pages/nosotros.php"){
+	if ($origen == "index"){
+		$ruta = "pages/nosotros.php";
+	}
+	else {
+		$ruta = "nosotros.php";
+	}
 	echo '
 	<footer class="contenido">
 		<p>Av. Paseo de la República 3455 Lima</p>
         <p>Teléfono: +51 919 593 169</p>
+		<a class="nosotros" href="' . $ruta . '">Quieres Somos</a> 
 	</footer>
 		';
 }

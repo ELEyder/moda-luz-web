@@ -12,7 +12,7 @@
     </head>
     <body>
         <?php
-            fnMostrarCabecera("../img/logo.png");
+            fnMostrarCabecera("");
         ?>
     <main class="contenido-nosotros">
         <div class="titulo-desc">
@@ -30,7 +30,7 @@
                 clientes con el mejor equipo certificado con calidad.
             </p>
         </div>
-        <a class="regresar" href='../index.php'>Regresar</a>
+        <a class="regresar" href='../index.php'>Regresar al Inicio</a>
     </main>
     <?php
         fnMostrarPie();

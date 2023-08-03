@@ -11,16 +11,16 @@
     </head>
     <body>
         <?php
-            fnMostrarCabecera("img/logo.png");
+            fnMostrarCabecera("index");
         ?>
         <main class="contenido">
-            <p> <a class="indice" href='index.php'>Inicio</a> |
-            <a class="indice" href='pages/nosotros.php'>Quieres Somos</a> |
-            <a class="indice" href='pages/catalogo.php'>Catalogo</a></p>
+            <p>
+                <a class="indice" href='pages/catalogo.php'>Catalogo</a>
+            </p>
             <img class ="market"src='img/market.png'>
         </main> 
             <?php
-                fnMostrarPie();
+                fnMostrarPie("index");
             ?>
     </body>
 </html>

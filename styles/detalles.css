@@ -31,8 +31,15 @@ a.boton {
     padding: 10px;
     text-decoration: none;
 }
+a.boton:hover {
+    background-color: rgb(205, 174, 255);
+}
 a.regresar {
     color:white;
     text-decoration: none;
     margin: 20px;
+    font-weight: bold;
+}
+a.regresar:hover {
+    color:rgb(76, 0, 255);
 }

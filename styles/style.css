@@ -79,3 +79,11 @@ footer.contenido p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
 }
+a.nosotros {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+}

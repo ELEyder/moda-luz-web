@@ -17,7 +17,7 @@
     <body>
     <?php
         //HEAD
-        fnMostrarCabecera("../img/logo.png");
+        fnMostrarCabecera("");
     ?>
         <main class="contenido">
         <?php

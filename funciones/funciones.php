@@ -2,9 +2,13 @@
 function fnMostrarCabecera($origen){
 	if ($origen == "index"){
 		$ruta = "img/logo.png";
+		$rutalogin = "img/perfil.png";
+		$rutaA = "pages/login.php";
 	}
 	else {
 		$ruta = "../img/logo.png";
+		$rutalogin = "../img/perfil.png";
+		$rutaA = "login.php";
 	}
 	echo '
 		<header class="contenido">
@@ -16,8 +20,8 @@ function fnMostrarCabecera($origen){
             	<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
         	</div>
 			<div class="perfil">
-				<a class="login" href="pages/login.php">
-					<img class="perfil" src="img/perfil.png">
+				<a class="login" href="'.$rutaA.'">
+					<img class="perfil" src="' . $rutalogin . '">
 					Iniciar<br>Sesión
 				</a>
 			</div>

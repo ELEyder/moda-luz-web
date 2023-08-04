@@ -12,19 +12,26 @@ function fnMostrarCabecera($origen){
 	}
 	echo '
 		<header class="contenido">
-			<div> 
-            	<img class="logo" src="'. $ruta .'"> 
-        	</div>
-        	<div class="titulo"> 
-            	<h1>MERCADO MORADO S.A.</h1>
-            	<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
-        	</div>
-			<div class="perfil">
-				<a class="login" href="'.$rutaA.'">
-					<img class="perfil" src="' . $rutalogin . '">
-					Iniciar<br>Sesión
-				</a>
-			</div>
+			<section class="titulo">
+				<div class = "logo">
+					<img class="logo" src="'. $ruta .'"> 
+				</div>
+				<div class = "nombre"> 
+            		<h1>MERCADO MORADO S.A.</h1>
+            		<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
+        		</div>
+				<div class="perfil">
+					<a class="perfil" href="'.$rutaA.'">
+						<img class="perfil" src="' . $rutalogin . '">
+						<p>Iniciar</p>
+						<p>Sesión</p>
+					</a>
+				</div>
+        	</section>
+			<nav class="botones">
+                <a class="indice" href="pages/catalogo.php">Catálogo</a>
+                <a class="indice" href="pages/catalogo.php">Carrito</a>
+            </nav>
 		</header>
 	';
 }

@@ -2,18 +2,34 @@ body {
     background-color: white;
     margin: 0px;
 }
-/* CABECERA */
+/* ---------------------------------------------------------------- CABECERA ------------------------------------------------------*/
 header.contenido{
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+/* -------------------- Primera Seccion ----------------------*/
+section.titulo {
+    display: flex;
     flex-direction: row;
     text-align: center;
+    width: 100%;
+    height: 150px;
+}
+/* Contenedor LOGO */
+div.logo {
+    width: 150px;
+    height: 150px;
 }
 img.logo {
     width: 150px;
-    height: auto;
+    height: 150px;
 }
-.titulo {
+/* Contenedor Nombre */
+div.nombre {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,13 +37,14 @@ img.logo {
     align-items: center;
     justify-content: center;
 }
-.titulo h1{
+.nombre h1{
     font-family: Arial, Helvetica, sans-serif;
 }
-.titulo h3{
+.nombre h3{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(87, 87, 87);
 }
+/* Contenedor PERFIL */
 div.perfil{
     padding: 5px;
     width: 150px;
@@ -38,6 +55,9 @@ img.perfil{
     height: 90px;
     margin: 5px;
 }
+
+
+/* Fuera */
 a.login{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +66,7 @@ a.login{
     text-align: center;
     margin-top: 10px;
 }
-/* CONTENIDO */
+/* --------------------------------------------------- CONTENIDO -----------------------------------------------*/
 main.contenido {
     background-color: rgb(126, 71, 255);
     display: flex;
@@ -57,11 +77,25 @@ main.contenido {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
+div.botones {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+}
+p.botones{
+    margin: 30px;
+    padding: 0px;
+}
 a.indice{
     text-decoration: none;
-    color: white;
+    background-color: white;
+    border: 5px solid rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    margin: 10px;
+    padding: 30px;
+    margin: 0px;
 }
 a.indice:hover{
     font-weight: bold;

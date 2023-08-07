@@ -17,8 +17,8 @@ function fnMostrarCabecera($origen = ""){
 					<img class="logo" src="'. $rutaImg .'logo.png"> 
 				</div>
 				<div class = "nombre"> 
-            		<h1>MERCADO MORADO S.A.</h1>
-            		<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
+            		<h1>LIBERTY MARKET S.A.</h1>
+            		<h3>¡COMPRA CON LIBERTAD!</h3> 
         		</div>
 				<div class="perfil">
 					<img class="perfil" src="' . $rutaImg . 'perfil.png">
@@ -29,9 +29,9 @@ function fnMostrarCabecera($origen = ""){
 				</div>
         	</section>
 			<nav class="botones">
-				<a href="' . $rutaIndex . 'index.php"><button class="boton" >Inicio</button></a>
-                <a href="' . $rutaPages . 'catalogo.php"><button class="boton" >Catálogo</button></a>
-				<a href="' . $rutaPages . 'carrito.php"><button class="boton" >Carrito</button></a>
+				<a href="' . $rutaIndex . 'index.php"><button class="boton" >INICIO</button></a>
+                <a href="' . $rutaPages . 'catalogo.php"><button class="boton" >CATÁLOGO</button></a>
+				<a href="' . $rutaPages . 'carrito.php"><button class="boton" >CARRITO</button></a>
             </nav>
 		</header>
 	';

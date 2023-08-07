@@ -30,7 +30,7 @@ require_once("../funciones/funciones.php");
                 expectativas en cada paso del camino.
             </p>
             <p class="desc">
-                En Mercado Morado, consideramos que su satisfacción es nuestra máxima prioridad. Estamos aquí, a su
+                En Liberty Market, consideramos que su satisfacción es nuestra máxima prioridad. Estamos aquí, a su
                 disposición, en todo momento, dispuestos a responder a cualquier consulta que tenga. Su comodidad y
                 bienestar son fundamentales para nosotros, y trabajamos incansablemente para asegurarnos de que cada
                 interacción con nosotros sea una experiencia placentera y sin complicaciones. Entendemos que sus
@@ -46,7 +46,7 @@ require_once("../funciones/funciones.php");
                 estrictas normas de calidad, brindándole la tranquilidad de saber que está adquiriendo lo mejor.
             </p>
             <p class="desc">
-                En resumen, en Mercado Morado estamos arraigados en la misión de brindarle soluciones en productos
+                En Liberty Market estamos arraigados en la misión de brindarle soluciones en productos
                 esenciales con un compromiso inquebrantable con la calidad y el servicio. Su satisfacción impulsa cada
                 paso que damos, y estamos emocionados de seguir siendo su socio confiable en su búsqueda de productos de
                 primera necesidad. ¡Gracias por elegirnos como su opción preferida durante más de dos décadas y

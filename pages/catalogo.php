@@ -4,7 +4,7 @@
 ?>
 <html>
     <head>
-        <title>MERCADO MORADO S.A</title>
+        <title>CATÁLOGO</title>
         <meta name="author" content="Eyder Huayta Tantavilca">
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="../styles/style.css">

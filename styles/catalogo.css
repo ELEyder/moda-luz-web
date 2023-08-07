@@ -18,7 +18,7 @@ div.producto {
     align-items: center;
     width: 400px;
     background-color: rgb(255, 255, 255);
-    border: 10px solid rgb(96, 28, 255);
+    border: 10px solid rgb(9, 46, 255);
     border-radius: 50px;
     margin: 10px;
 }
@@ -50,5 +50,5 @@ a.regresar {
     font-family: Arial, Helvetica, sans-serif;
 }
 a.regresar:hover {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 38, 255);
 }

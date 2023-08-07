@@ -16,7 +16,7 @@ div.producto {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 260px;
     background-color: rgb(255, 255, 255);
     border: 10px solid rgb(9, 46, 255);
     border-radius: 50px;

@@ -33,7 +33,6 @@
                 echo '<a class="producto" href="detalles.php?id='. $id .'"><div class="producto">
                 <img class="producto" src="'.$img.'" alt="'.$imagen.'">
                 <h1 class="producto">'.$nombre.'</h1>
-                <p class="producto">Unidad: '.$desc.'</p>
                 <p class="producto">Precio: S/.'.$precio.'</p>
             </div></a>';
             }

@@ -20,9 +20,10 @@ img.producto {
 }
 div.texto {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Muli',sans-serif;
 }
 h1.producto {
+    color: rgb(1, 1, 145);
     font-size: 30px;
     margin: 20px;
 }

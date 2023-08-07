@@ -4,7 +4,7 @@ require_once("../funciones/funciones.php");
 <html>
 
 <head>
-    <title>MERCADO MORADO S.A</title>
+    <title>NOSOTROS</title>
     <meta name="author" content="Eyder Huayta Tantavilca">
     <meta name="description" content="Mercado en linea de alimentos.">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">

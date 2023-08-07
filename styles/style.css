@@ -112,7 +112,9 @@ img.market {
     margin: 50px;
     border: 10px solid white;
 }
-
+p {
+    margin-bottom: 0px;
+}
 /* ------------------------------------------------------------ PIE --------------------------------------- */
 footer.contenido{
     display: flex;

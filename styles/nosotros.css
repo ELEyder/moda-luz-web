@@ -25,10 +25,10 @@ p.desc {
     color: white;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     width: 49%;
-    margin: 1%;
+    margin: 0px;
 }
 a.regresar {
     color: white;

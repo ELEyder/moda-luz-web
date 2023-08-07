@@ -23,8 +23,7 @@ function fnMostrarCabecera($origen = ""){
 				<div class="perfil">
 					<img class="perfil" src="' . $rutaImg . 'perfil.png">
 					<a class="perfil" href="'.$rutaPages.'formulario.php">
-						<p class="perfil">Iniciar</p>
-						<p class="perfil">Sesión</p>
+						<p class="perfil">Regístrate</p>
 					</a>
 				</div>
         	</section>

@@ -7,9 +7,11 @@ body{
     backdrop-filter: blur(2px);
     margin: 0px;
 }
+html {
+    width: 100%;
+}
 main{
     width: 100%;
-    padding: 20px;
     margin: auto;
     padding-top: 100px;
 }
@@ -25,7 +27,7 @@ main{
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    background-color: rgba(51, 0, 153, 0.74);
+    background-color: rgba(4, 27, 236, 0.74);
     backdrop-filter: blur(10px);
 }
 .contenedor_textos button{
@@ -38,7 +40,7 @@ main{
     transition: 200ms;
 }
 .contenedor_textos button:hover{
-    color: rgb(93, 0, 199);
+    color: rgb(3, 0, 199);
     background-color: white;
 }
 .registrarse,
@@ -58,7 +60,9 @@ main{
     color: white;
     font-size: 20px;
 }
-
+.contenedor_formularios{
+    transition: 200ms;
+}
 .login,
 .register{
     width: 100%;
@@ -73,16 +77,21 @@ main{
     padding: 80px 40px;
     top: -10px;
     display: none;
+    transition: 200ms;
+
 }
 .register{
     top: -40px;
     padding: 40px 40px;
     display: block;
+    right: 200px;
+    transition: 200ms;
+
 }
 .login h1,
 .register h1{
     font-size: 40px;
-    color: rgb(93, 0, 199); 
+    color: rgb(0, 3, 199); 
 }
 .register input,
 .login input{

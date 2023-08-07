@@ -18,7 +18,7 @@
                 <div class="registrarse">
                     <h1>¿No tienes una cuenta?</h1>
                     <p>Crea una cuenta para poder comprar :)</p>
-                    <button>Crear cuenta</button>
+                    <button id="btnCrear">Crear cuenta</button>
                 </div>
                 <div class="iniciar_sesion">
                     <h1>¿Ya tienes una cuenta?</h1>

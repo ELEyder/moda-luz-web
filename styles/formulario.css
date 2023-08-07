@@ -1,0 +1,113 @@
+body{
+    background-image: url(../img/bg-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    margin: 0px;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    padding-top: 100px;
+}
+.contenedor_todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 0px;
+    position: relative;
+}
+.contenedor_textos{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(51, 0, 153, 0.74);
+    backdrop-filter: blur(10px);
+}
+.contenedor_textos button{
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    transition: 200ms;
+}
+.contenedor_textos button:hover{
+    color: rgb(93, 0, 199);
+    background-color: white;
+}
+.registrarse,
+.iniciar_sesion {
+    margin: 50px;
+    color: white;
+    transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+
+}
+.registrarse h1,
+.iniciar_sesion h1{
+    margin-top: 20px;
+}
+.registrarse p,
+.iniciar_sesion p{
+    color: white;
+    font-size: 20px;
+}
+
+.login,
+.register{
+    width: 100%;
+    max-width: 310px;
+    left: 10px;
+    background-color: white;
+    padding: 100px 20px;
+    border-radius: 20px;
+    position: absolute;
+}
+.login{
+    padding: 80px 40px;
+    top: -10px;
+    display: none;
+}
+.register{
+    top: -40px;
+    padding: 40px 40px;
+    display: block;
+}
+.login h1,
+.register h1{
+    font-size: 40px;
+    color: rgb(93, 0, 199); 
+}
+.register input,
+.login input{
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(124, 124, 124);
+    transition: 200ms;
+}
+.register input:hover,
+.login input:hover{
+    border: 2px solid black;
+}
+.register button,
+.login button{
+    background-color: white;
+    padding: 10px;
+    border: 0px;
+    border-top: 2px solid rgb(136, 136, 136);
+    border-bottom: 2px solid rgb(136, 136, 136);
+    transition: 200ms;
+}
+.register button:hover,
+.login button:hover{
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}

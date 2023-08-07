@@ -9,7 +9,6 @@ header.contenido{
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 150px;
 }
 /* -------------------- Primera Seccion ----------------------*/
 section.titulo {
@@ -51,20 +50,46 @@ div.perfil{
     height: 150px;
 }
 img.perfil{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin: 5px;
 }
-
-
-/* Fuera */
-a.login{
+a.perfil{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+}
+p.perfil {
+    margin: 0px;
+}
+/* Navegacion Botones  */
+nav.botones {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button.boton {
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-top: 1px solid rgb(124, 124, 124);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    margin: 2px 5px 2px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+button.boton:hover {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 /* --------------------------------------------------- CONTENIDO -----------------------------------------------*/
 main.contenido {
@@ -77,30 +102,6 @@ main.contenido {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
-div.botones {
-    background-color: white;
-    width: 100%;
-    height: 120px;
-    margin: 0px;
-    padding: 0px;
-}
-p.botones{
-    margin: 30px;
-    padding: 0px;
-}
-a.indice{
-    text-decoration: none;
-    background-color: white;
-    border: 5px solid rgb(170, 170, 170);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 30px;
-    margin: 0px;
-}
-a.indice:hover{
-    font-weight: bold;
-    color: rgb(76, 0, 255);
-}
 
 img.market {
     width: 50%;
@@ -109,13 +110,14 @@ img.market {
     border: 10px solid white;
 }
 
-/* PIE */
+/* ------------------------------------------------------------ PIE --------------------------------------- */
 footer.contenido{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(179, 179, 179);
     padding: 20px;
 }
 footer.contenido p{
@@ -124,7 +126,7 @@ footer.contenido p{
     margin: 10px;
 }
 a.nosotros {
-    color: black;
+    color: rgb(77, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -134,5 +136,5 @@ a.nosotros {
 a.nosotros:hover{
     text-decoration: none;
     font-weight: bold;
-    color: rgb(76, 0, 255);
+    color: rgb(252, 252, 252);
 }

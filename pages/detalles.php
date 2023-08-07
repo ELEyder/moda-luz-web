@@ -43,7 +43,7 @@
                     <h1 class="producto">'.$nombre.'</h1>
                     <p class="producto">Unidad: '.$desc.'</p>
                     <p class="producto">Precio: S/.'.$precio.'</p>
-                    <a class="boton"href="../index.php">Comprar Producto</a>
+                    <a class="boton"href="../index.php">Agregar al carrito</a>
                 </div>
             </div>';
         }

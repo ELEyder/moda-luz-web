@@ -1,36 +1,37 @@
 <?php
-function fnMostrarCabecera($origen){
+function fnMostrarCabecera($origen = ""){
 	if ($origen == "index"){
-		$ruta = "img/logo.png";
-		$rutalogin = "img/perfil.png";
-		$rutaA = "pages/login.php";
+		$rutaImg = "img/";
+		$rutaPages = "pages/";
+		$rutaIndex = "";
 	}
 	else {
-		$ruta = "../img/logo.png";
-		$rutalogin = "../img/perfil.png";
-		$rutaA = "login.php";
+		$rutaImg = "../img/";
+		$rutaPages = "";
+		$rutaIndex = "../";
 	}
 	echo '
 		<header class="contenido">
 			<section class="titulo">
 				<div class = "logo">
-					<img class="logo" src="'. $ruta .'"> 
+					<img class="logo" src="'. $rutaImg .'logo.png"> 
 				</div>
 				<div class = "nombre"> 
             		<h1>MERCADO MORADO S.A.</h1>
             		<h3>¡DONDE COMPRAR ES UN PLACER!</h3> 
         		</div>
 				<div class="perfil">
-					<a class="perfil" href="'.$rutaA.'">
-						<img class="perfil" src="' . $rutalogin . '">
-						<p>Iniciar</p>
-						<p>Sesión</p>
+					<img class="perfil" src="' . $rutaImg . 'perfil.png">
+					<a class="perfil" href="'.$rutaPages.'formulario.php">
+						<p class="perfil">Iniciar</p>
+						<p class="perfil">Sesión</p>
 					</a>
 				</div>
         	</section>
 			<nav class="botones">
-                <a class="indice" href="pages/catalogo.php">Catálogo</a>
-                <a class="indice" href="pages/catalogo.php">Carrito</a>
+				<a href="' . $rutaIndex . 'index.php"><button class="boton" >Inicio</button></a>
+                <a href="' . $rutaPages . 'catalogo.php"><button class="boton" >Catálogo</button></a>
+				<a href="' . $rutaPages . 'carrito.php"><button class="boton" >Carrito</button></a>
             </nav>
 		</header>
 	';

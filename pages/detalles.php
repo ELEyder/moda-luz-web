@@ -42,8 +42,9 @@
                 <div class="texto">
                     <h1 class="producto">'.$nombre.'</h1>
                     <p class="producto">Unidad: '.$desc.'</p>
+                    <p class="producto">Cantidad: <input type="number" value="1"></p>      
                     <p class="producto">Precio: S/.'.$precio.'</p>
-                    <a class="boton"href="../index.php">Agregar al carrito</a>
+                    <a href="../index.php"> <button class="producto">Agregar al carrito</button> </a>
                 </div>
             </div>';
         }

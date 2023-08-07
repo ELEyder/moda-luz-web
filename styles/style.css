@@ -104,10 +104,12 @@ main.contenido {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding: 40px;
 }
 
 img.market {
-    width: 50%;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 50px;
     margin: 50px;
     border: 10px solid white;

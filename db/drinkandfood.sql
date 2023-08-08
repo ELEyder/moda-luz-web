@@ -35,17 +35,27 @@ CREATE TABLE `productos` (
   `imagen` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
+create table usuarios (
+    idUsuario int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nombre varchar(20) NOT NULL,
+    apellido varchar(20) NOT NULL,
+    correo varchar(50) NOT NULL,
+    numero varchar(10) NOT NULL,
+    contrasena varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`idProducto`, `nombre`, `precio`, `descripcion`, `imagen`) VALUES
-(1, 'Aceite', 16.20, 'Litros', 'aceite'),
-(2, 'Arroz COSTEÑO', 5.50, 'Kg.', 'arroz'),
-(3, 'Azucar ZULKA', 4.70, 'Kg.', 'azucar'),
-(4, 'Café Tostado y Molido CAFETAL', 5.50, 'Bolsa 200g.', 'cafe'),
-(5, 'Leche IDEAL', 4.60, 'Lata', 'leche'),
-(6, 'Mermelada FANNY', 13.00, 'Lata', 'mermelada');
+INSERT INTO `productos` (`nombre`, `precio`, `descripcion`, `imagen`) VALUES
+( 'Aceite', 16.20, 'Litros', 'aceite'),
+( 'Arroz COSTEÑO', 5.50, 'Kg.', 'arroz'),
+( 'Azucar ZULKA', 4.70, 'Kg.', 'azucar'),
+( 'Café Tostado y Molido CAFETAL', 5.50, 'Bolsa 200g.', 'cafe'),
+( 'Leche IDEAL', 4.60, 'Lata', 'leche'),
+( 'Mermelada FANNY', 13.00, 'Lata', 'mermelada');
 
 --
 -- Índices para tablas volcadas

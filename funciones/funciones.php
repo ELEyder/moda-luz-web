@@ -10,6 +10,16 @@ function fnMostrarCabecera($origen = ""){
 		$rutaPages = "";
 		$rutaIndex = "../";
 	}
+	session_start();
+	if (!isset($_SESSION['nombre'])){
+		$texto = 	'<a class="perfil" href="'.$rutaPages.'formulario.php">
+					<p class="perfil">Regístrate</p>
+					</a>';
+	} else {
+		$texto = 	'<a class="perfil" href="'.$rutaPages.'cerrar.php">
+					<p class="perfil">Bienvenido '. $_SESSION['nombre'] .'</p>
+					</a>';
+	}
 	echo '
 		<header class="contenido">
 			<section class="titulo">
@@ -21,11 +31,9 @@ function fnMostrarCabecera($origen = ""){
             		<h3>¡COMPRA CON LIBERTAD!</h3> 
         		</div>
 				<div class="perfil">
-					<img class="perfil" src="' . $rutaImg . 'perfil.png">
-					<a class="perfil" href="'.$rutaPages.'formulario.php">
-						<p class="perfil">Regístrate</p>
-					</a>
-				</div>
+					<img class="perfil" src="' . $rutaImg . 'perfil.png">'
+					. $texto .
+				'</div>
         	</section>
 			<nav class="botones">
 				<a href="' . $rutaIndex . 'index.php"><button class="boton" >INICIO</button></a>

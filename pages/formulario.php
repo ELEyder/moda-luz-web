@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,19 +28,19 @@
                 </div>
             </div>
             <div class="contenedor_formularios">
-                <form action="register.php" method="POST" class="register">
+                <form action="registrar.php" method="POST" class="register">
                     <h1>Regístrate</h1>
                     <input type="text" placeholder="Nombre" name="nombre">
                     <input type="text" placeholder="Apellido" name="apellido">
                     <input type="email" placeholder="Correo electrónico" name="correo">
-                    <input type="number" placeholder="DNI" name="dni">
+                    <input type="number" placeholder="Numero" name="numero">
                     <input type="password" placeholder="Contraseña" name="contrasena">
                     <button type="submit">Registrarse</button>
                 </form>
-                <form action="login.php" method="POST" class="login">
+                <form action="iniciar.php" method="POST" class="login">
                     <h1>Inicia Sesión</h1>
-                    <input type="email" placeholder="Correo electrónico" name="correo">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <input type="email" placeholder="Correo electrónico" name="icorreo">
+                    <input type="password" placeholder="Contraseña" name="icontrasena">
                     <button type="submit">Iniciar Seción</button>
                 </form>
             </div>
@@ -47,6 +48,13 @@
 
     </main>
     <script src="../js/script.js"></script>
+    <?php
+    	session_start();
+        if (isset($_SESSION['nombre'])){
+            echo '<script>alert("Cerrando cerrada.");</script>';
+            session_destroy();
+        }
+    ?>
 </body>
 
 </html>

@@ -14,36 +14,45 @@ main.contenido {
 div.producto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 260px;
-    background-color: rgb(255, 255, 255);
-    border: 10px solid rgb(9, 46, 255);
-    border-radius: 50px;
+    width: 200px;
+    height: 300px;
+    background-color: #0C356A;
     margin: 10px;
+    overflow: hidden;
+}
+div.imagen {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+div.texto {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
 }
 h1.producto{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 5px;
-    color: black;
+    color: white;
+    width: 180px;
 }
 p.producto{
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: white;
     font-size: 18px;
     margin: 10px;
+    width: 180px;
 }
 img.producto {
-    height: 150px;
-    border-radius: 0px;
-    border-radius: 20px;
-    padding: 40px;
+    height: 180px;
+    width:  180px;
     transition: 300ms;
 }
 img.producto:hover {
-    padding: 30px;
-    height: 170px;
+    height: 200px;
+    width:  200px;
 }
 a.producto {
     margin: 20px;

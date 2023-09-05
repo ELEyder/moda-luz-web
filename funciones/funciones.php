@@ -1,4 +1,6 @@
 <?php
+
+//----------------------------------------------------------------- CABECERAS ------------------------------------------------------------------
 function fnMostrarCabecera($origen = ""){
 	if ($origen == "index"){
 		$rutaImg = "img/";
@@ -13,7 +15,7 @@ function fnMostrarCabecera($origen = ""){
 	session_start();
 	if (!isset($_SESSION['nombre'])){
 		$texto = 	'<a class="perfil" href="'.$rutaPages.'formulario.php">
-					<p class="perfil">Regístrate</p>
+					<p class="perfil">Iniciar Sesión / Registrarse</p>
 					</a>';
 	} else {
 		$texto = 	'<a class="perfil" href="'.$rutaPages.'cerrar.php">
@@ -22,18 +24,21 @@ function fnMostrarCabecera($origen = ""){
 	}
 	echo '
 		<header class="contenido">
-			<section class="titulo">
+			<section class="nombre">
 				<div class = "logo">
 					<img class="logo" src="'. $rutaImg .'logo.png"> 
 				</div>
-				<div class = "nombre"> 
-            		<h1>LIBERTY MARKET S.A.</h1>
-            		<h3>¡COMPRA CON LIBERTAD!</h3> 
+				<div class = "busqueda"> 
+            		<h1>LIBERTY MARKET S.A.</h1> <input class="buscador" type="text" placeholder="Busca en el catálogo de Liberty Market" name="busqueda">
         		</div>
 				<div class="perfil">
-					<img class="perfil" src="' . $rutaImg . 'perfil.png">'
+					<div class="imagen">
+						<img class="perfil" src="' . $rutaImg . 'perfil.png">
+					</div>
+					<div class="texto">'
 					. $texto .
-				'</div>
+					'</div>
+				</div>
         	</section>
 			<nav class="botones">
 				<a href="' . $rutaIndex . 'index.php"><button class="boton" >INICIO</button></a>

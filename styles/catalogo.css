@@ -24,6 +24,10 @@ div.imagen {
     width: 200px;
     height: 200px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div.texto {
     display: flex;

@@ -50,10 +50,10 @@ create table usuarios (
 --
 
 INSERT INTO `productos` (`nombre`, `precio`, `descripcion`, `imagen`) VALUES
-( 'Aceite', 16.20, 'Litros', 'aceite'),
+( 'Aceite PRIMOR', 16.20, 'Litros', 'aceite'),
 ( 'Arroz COSTEÑO', 5.50, 'Kg.', 'arroz'),
 ( 'Azucar ZULKA', 4.70, 'Kg.', 'azucar'),
-( 'Café Tostado y Molido CAFETAL', 5.50, 'Bolsa 200g.', 'cafe'),
+( 'Café CAFETAL', 5.50, 'Bolsa 200g.', 'cafe'),
 ( 'Leche IDEAL', 4.60, 'Lata', 'leche'),
 ( 'Mermelada FANNY', 13.00, 'Lata', 'mermelada');
 

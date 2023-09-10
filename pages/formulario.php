@@ -45,8 +45,12 @@
                 </form>
             </div>
         </div>
-
     </main>
+    <footer>
+        <a href="../index.php">
+            <button>REGRESAR</button>
+        </a>
+    </footer>
     <script src="../js/script.js"></script>
     <?php
     	session_start();

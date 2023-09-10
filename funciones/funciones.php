@@ -15,29 +15,36 @@ function fnMostrarCabecera($origen = ""){
 	session_start();
 	if (!isset($_SESSION['nombre'])){
 		$texto = 	'<a class="perfil" href="'.$rutaPages.'formulario.php">
-					<button class="perfil">Entrar</button>
+						Entrar
 					</a>';
 	} else {
-		$texto = 	'<a class="perfil" href="'.$rutaPages.'cerrar.php">
-					<p class="perfil">Bienvenido '. $_SESSION['nombre'] .'</p>
+		$texto = 	'
+					<div class="foto-perfil">
+						<img class="foto-perfil" src="'. $rutaImg .'foto-perfil.png">
+					</div>
+					<a href="'.$rutaPages.'cerrar.php">
+					<div class="nombre-perfil">	
+							<p class="nombre-perfil">'. $_SESSION['nombre'] .'</p>	
+					</div>
 					</a>';
+					
 	}
 	echo '
-		<header class="contenido">
-			<section class="nombre">
-				<div class = "logo">
+		<header>
+			<div class = "logo">
+				<a href="'. $rutaIndex .'">
 					<img class="logo" src="'. $rutaImg .'logo.png"> 
-				</div>
-				<div class = "busqueda"> 
-            		<h1>LIBERTY MARKET S.A.</h1>
-					<input class="buscador" type="text" placeholder="Busca en el catálogo de Liberty Market" name="busqueda">
-        		</div>
-				<div class="perfil">
-					<div class="texto-perfil">'
-					. $texto .
-					'</div>
-				</div>
-        	</section>
+				</a>
+			</div>
+			<div class = "titulo"> 
+            	<h1 class="titulo">LIBERTY MARKET</h1>
+			</div>
+			<div class="buscador">
+				<input class="buscador" type="text" placeholder="Busca en el catálogo de Liberty Market" name="busqueda"> 
+			</div>
+			<div class="perfil">'
+				. $texto .
+			'</div>
 		</header>
 	';
 }

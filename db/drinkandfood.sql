@@ -40,8 +40,8 @@ create table usuarios (
     idUsuario int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nombre varchar(20) NOT NULL,
     apellido varchar(20) NOT NULL,
-    correo varchar(50) NOT NULL,
-    numero varchar(10) NOT NULL,
+    correo varchar(50) NOT NULL UNIQUE,
+    numero varchar(10) NOT NULL UNIQUE,
     contrasena varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

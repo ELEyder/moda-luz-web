@@ -8,7 +8,7 @@
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="content/styles/style.css">
         <link rel="stylesheet" type="text/css" href="content/styles/catalogo.css">
-        <link rel="shortcut icon" href="icon.ico">
+        <link rel="icon" href="content/img/icon.ico" type='image/x-icon'>
     </head>
     <body>
         <?php require_once 'views/header.php' ?>

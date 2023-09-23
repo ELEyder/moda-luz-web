@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="stylesheet" href="../../content/styles/formulario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>BIENVENIDO</title>
 </head>
 
 <body>
@@ -51,11 +51,11 @@
             <button>REGRESAR</button>
         </a>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../../js/script.js"></script>
     <?php
     	session_start();
         if (isset($_SESSION['nombre'])){
-            echo '<script>alert("Cerrando cerrada.");</script>';
+            echo '<script>alert("Cerrando ventana.");</script>';
             session_destroy();
         }
     ?>

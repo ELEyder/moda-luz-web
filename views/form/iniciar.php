@@ -1,5 +1,5 @@
 <?php
-require_once('../funciones/mysql.php');
+require_once('../../controller/mysql.php');
     $icorreo = $_POST['icorreo'];
     $icontrasena = hash("sha512",$_POST['icontrasena']);
 

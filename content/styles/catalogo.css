@@ -13,8 +13,8 @@ main.contenido {
 }
 div.producto {
     display: flex;
-    flex-direction: column;
-    width: 200px;
+    flex-direction: row;
+    width: 400px;
     height: 300px;
     background-color: #0C356A;
     margin: 10px;

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^content/ - [L] # Ignorar las rutas que comienzan con /content/
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

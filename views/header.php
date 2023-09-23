@@ -1,7 +1,7 @@
 <?php
 session_start();
 	if (!isset($_SESSION['nombre'])){
-		$texto = 	'<a class="perfil" href="views/form/formulario.php">
+		$texto = 	'<a class="perfil" href="form">
 						Entrar
 					</a>';
 	} else {

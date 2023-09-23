@@ -5,6 +5,10 @@ Class App{
         $url = rtrim($url, '/');
         $url = explode('/',$url);
 
+        if ($url[0] == ''){
+            $url[0] = 'main';
+        }
+
         $archivoController = 'controllers/' . $url[0] . '.php';
         if(file_exists($archivoController)){
             require_once $archivoController;

@@ -1,7 +1,7 @@
 <?php
 session_start();
 	if (!isset($_SESSION['nombre'])){
-		$texto = 	'<a class="perfil" href="form">
+		$texto = 	'<a class="perfil" href="'. $_ENV['URL'] .'form">
 						Entrar
 					</a>';
 	} else {
@@ -9,7 +9,7 @@ session_start();
 					<div class="foto-perfil">
 						<img class="foto-perfil" src="content/img/foto-perfil.png">
 					</div>
-					<a href="cerrar.php">
+					<a href="'. $_ENV['URL'] .'form/cerrar">
 					<div class="nombre-perfil">	
 							<p class="nombre-perfil">'. $_SESSION['nombre'] .'</p>	
 					</div>

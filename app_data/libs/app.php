@@ -13,6 +13,8 @@ Class App{
         if(file_exists($archivoController)){
             require_once $archivoController;
             $controller = new $url[0]; //CREAR OBJETO DEL CONTROLADOR TRAIDO
+            $controller->loadModel($url[0]); //LLAMAR SU RESPECTIVO MODELO
+            $controller->render(); //LLAMAR SU RESPECTIVA VISTA
             if (isset($url[1])){ //SI EXISTE OTRA URL /
                 $controller->{$url[1]}(); //ES UN METODO Y SE LE TRAE
             }

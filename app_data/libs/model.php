@@ -1,8 +1,8 @@
 <?php
 class Model{
-
-    function __construct(){
-        
+    protected $db;
+    public function __construct(){
+        $this->db = new Database();
     }
 }
 

@@ -15,16 +15,13 @@
     </head>
 
     <body>
-    <?php
-        //HEAD
-        fnMostrarCabecera("");
-    ?>
+    <?php require_once 'views/header.php' ?>
         <main class="contenido">
         <?php
         //MAIN
-        $cn = fnConnect($msg);
+        $cn = fnConnect();
         if(!$cn){
-            fnShowMsg("Error",$msg);//mostrar mensaje de error
+            fnShowMsg("Error",'conexion');//mostrar mensaje de error
             return; //salir
         }else{
             $tablaSQL = fnConsultaSelect("select * from productos where idProducto =". $_GET['id']);
@@ -51,9 +48,7 @@
     ?>
     <a class="regresar" href="catalogo.php">Regresar al Catálogo</a>
         </main>
-            <?php
-                fnMostrarPie();
-            ?>
+        <?php require_once 'views/footer.php' ?>
 </th>
         </tr>
     </table>

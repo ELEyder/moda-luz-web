@@ -13,9 +13,7 @@ require_once("../funciones/funciones.php");
 </head>
 
 <body>
-    <?php
-    fnMostrarCabecera("");
-    ?>
+<?php require_once 'views/header.php' ?>
     <main class="contenido-nosotros">
         <div class="quienes-somos">
             <p>¿Qui&eacute;nes Somos?</p>
@@ -55,9 +53,7 @@ require_once("../funciones/funciones.php");
         </div>
         <a class="regresar" href='../index.php'>Regresar al Inicio</a>
     </main>
-    <?php
-    fnMostrarPie();
-    ?>
+    <?php require_once 'views/footer.php' ?>
 </body>
 
 </html>

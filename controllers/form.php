@@ -4,6 +4,5 @@
             parent::__construct();
             $this->view->render('form/index');
         }
-        
     }
 ?>

@@ -1,6 +1,3 @@
-<?php
-
-?>
 <html lang="es">
     <head>
         <title>LIBERTY MARKET S.A.</title>
@@ -17,9 +14,8 @@
         </main>
         <section class="productos">
         <?php
-            $tablaSQL = fnConsultaSelect("select * from productos");
             // Extraemos todas las filas de la tabla
-            while ($row = mysqli_fetch_array($tablaSQL,MYSQLI_ASSOC)) {
+            while ($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)) {
                 $id = $row['idProducto'];
                 $nombre = $row['nombre'];
                 $desc = $row['descripcion'];

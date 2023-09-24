@@ -12,9 +12,7 @@
         <link rel="shortcut icon" href="../icon.png">
     </head>
     <body>
-        <?php
-            fnMostrarCabecera("");
-        ?>
+        <?php require_once 'views/header.php'?>
     <main class="contenido">
         <div class="subtitulo">
             <p>CATALOGO DE PRODUCTOS</p>
@@ -40,10 +38,8 @@
             }
             ?>
         </div>
-        <a class="regresar" href='../index.php'>Regresar</a>
+        <a class="regresar" href='main'>Regresar</a>
     </main>
-            <?php
-            fnMostrarPie();
-            ?>
+        <?php require_once 'views/header.php'?>
     </body>
 </html>

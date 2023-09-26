@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Prenda` (
-  `IdProducto` int(10) NOT NULL,
+  `IdPrenda` int(10) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Precio` double(10,2) NOT NULL,
   `Descripcion` varchar(250) DEFAULT 'undefined',
@@ -39,7 +39,7 @@ CREATE TABLE `Prenda` (
 -- Volcado de datos para la tabla `Prenda`
 --
 
-INSERT INTO `Prenda` (`IdProducto`, `Nombre`, `Precio`, `Descripcion` ) VALUES
+INSERT INTO `Prenda` (`IdPrenda`, `Nombre`, `Precio`, `Descripcion` ) VALUES
 (1, 'Polo Simple Cuello Redondo', 39.50, 'undefined'),
 (2, 'Polo Simple Cuello Redondo', 39.50, 'undefined'),
 (3, 'Polo Simple Cuello Redondo', 39.50, 'undefined'),
@@ -89,7 +89,7 @@ CREATE TABLE `Usuario` (
 -- Indices de la tabla `Prenda`
 --
 ALTER TABLE `Prenda`
-  ADD PRIMARY KEY (`IdProducto`);
+  ADD PRIMARY KEY (`IdPrenda`);
 
 --
 -- Indices de la tabla `Usuario`

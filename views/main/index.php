@@ -20,10 +20,10 @@
             $cardsFilas = 4;
             // Extraemos todas las filas de la tabla
             while ($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)) {
-                $id = $row['idProducto'];
-                $nombre = $row['nombre'];
-                $desc = $row['descripcion'];
-                $precio = $row['precio'];
+                $id = $row['IdPrenda'];
+                $nombre = $row['Nombre'];
+                $desc = $row['Descripcion'];
+                $precio = $row['Precio'];
                 $img = "content/img/catalogo/" . $id . ".webp";
                 if ($id == '1' or ((($id - 1) % $cardsFilas) == 0)){
                     echo '<div class="fila">';

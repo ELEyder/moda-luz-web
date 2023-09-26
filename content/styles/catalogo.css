@@ -1,33 +1,84 @@
-main.contenido {
+:root {
+    --color-primario: #FF741C;
+    --color-secundario: #B8642F;
+    --fuente-principal: 'Fira Sans', sans-serif;
+    --separación-divs-header: 4rem;
+    --ancho-card: 24rem;
+}
+section.catalogo{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+div.contenido{
     display: flex;
     flex-direction: column;
-}
-.subtitulo {
-    font-size: 30px;
-}
-.productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: left;
     justify-content: center;
+    width: max-content;
+    height: max-content;
 }
-div.producto {
+h1.mas-vendidos{
+    color: var(--color-secundario);
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 5rem;
+    width: max-content;
+    height: max-content;
+}
+div.catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+div.fila{
     display: flex;
     flex-direction: row;
-    width: 400px;
-    height: 300px;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    margin-bottom: 4rem;
+}
+div.fila:last-child{
+    margin-bottom: 0rem;
+}
+
+div.prenda {
+    width: var(--ancho-card);
+    display: flex;
+    flex-direction: column;
     background-color: #0C356A;
-    margin: 10px;
     overflow: hidden;
+    margin-left: 4rem;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+div.prenda:first-child{
+    margin-left: 0rem;
 }
 div.imagen {
-    width: 200px;
-    height: 200px;
+    width: var(--ancho-card);
+    height: var(--ancho-card);
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+img.prenda {
+    height: var(--ancho-card);
+    width:  var(--ancho-card);
+    transition: 300ms;
+}
+img.prenda:hover {
+    width: calc(var(--ancho-card) + 4rem);
+    height: calc(var(--ancho-card) + 4rem);
 }
 div.texto {
     display: flex;
@@ -35,40 +86,23 @@ div.texto {
     width: 200px;
     height: 100px;
 }
-h1.producto{
+h1.prenda{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 5px;
     color: white;
     width: 180px;
 }
-p.producto{
+p.prenda{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 18px;
     margin: 10px;
     width: 180px;
 }
-img.producto {
-    height: 180px;
-    width:  180px;
-    transition: 300ms;
-}
-img.producto:hover {
-    height: 200px;
-    width:  200px;
-}
-a.producto {
-    margin: 20px;
-    text-decoration: none;
-}
-a.regresar {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
 a.regresar:hover {
     color: rgb(0, 38, 255);
 }

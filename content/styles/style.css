@@ -1,138 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
 :root {
-    --color-primario: #0C356A
+    --color-primario: #FF741C;
+    --color-secundario: #B8642F;
+    --fuente-principal: 'Fira Sans', sans-serif;
+    --separación-divs-header: 4rem;
+    --ancho-card: 24rem;
 }
 html{
     font-size: 10px;
 }
 body {
-    background-color: white;
+    background-color: var(--color-primario);
     margin: 0px;
     padding: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--fuente-principal); 
 }
 a{
     text-decoration: none;
 }
 /* ---------------------------------------------------------------- CABECERA ------------------------------------------------------*/
 header {
-    width: 100%;
     height: 7rem;
-    background-color: white;
+    background-color: var(--color-primario);
     display: flex;
     flex-direction: row;
     align-items: center; /* Se mantienen al centro horizontalmente */
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 /* --------------- Contenedor LOGO ------------------- */
 div.logo, img.logo {
-    width: 7rem;
-    height: 7rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: var(--separación-divs-header);
 }
 /*----------------- Contenedor Titulo -----------------*/
-div.titulo {
-    width: 35%;
-    padding-left: 1rem;
-}
 /* Titulo */
 h1.titulo{
-    color: var(--color-primario);
+    color: white;
     font-size: 3rem;
+    font-weight: bolder;
+    margin-right: var(--separación-divs-header);
 }
 /*----------------- Contenedor Busqueda -----------------*/
-div.buscador{
-    width: 65%;
-    padding-left: 1rem;
+
+form.buscador{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px var(--color-secundario);
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    margin-block-end: 0em;
+    margin-right: var(--separación-divs-header);
 }
 input.buscador{
-    width: 45rem;
-    height: 4rem;
-    padding: 1rem;
-    border: solid 2px #bebebe;
-    border-radius: 1rem;
+    width: 40rem;
+    height: 3rem;
     outline: none; /* para que no aparezca la linea negra por defecto */
+    margin: 0px;
+    padding-left: 1.5rem;
+    border: 0px;
 }
-input.buscador:focus{
-    border: solid 2px var(--color-primario);
+button.buscador{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    outline: none; /* para que no aparezca la linea negra por defecto */
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 /*--------------  Contenedor PERFIL--------------- */
-div.perfil{
-    width: 200px;
-    height: 70px;
+div.mi-cuenta{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-right: var(--separación-divs-header);
 }
-/* 1 */
-a.perfil {
-    font-size: 20px;
-    width: 120px;
-    padding: 15px 0px 15px 0px;
-    background-color: var(--color-primario);
+
+h1.mi-cuenta {
+    font-size: 2rem;
+    padding: 0px;
     color: white;
     text-align: center;
     transition: 300ms;
-}
-a.perfil:hover {
-    background-color: #40F8FF;
-    color: black;
-}
-/* 2 */
-/* IMAGEN */
-div.foto-perfil {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-img.foto-perfil{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: var(--color-primario) solid 2px;
-}
-/* NOMBRE */
-div.nombre-perfil{
-    width: 130px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-p.nombre-perfil{
-    color: var(--color-primario);
-    font-size: 20px;
-    margin: 0px;
+    margin-right: 1rem;
 }
 
-/* Navegacion Botones  */
-nav.botones {
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgb(134, 134, 134);
-    padding-top: 4px;
-}
-
-button.boton {
-    background-color: white;
-    color: black;
-    border: 0px;
-    border-top: 1px solid rgb(124, 124, 124);
-    border-bottom: 1px solid rgb(124, 124, 124);
-    margin: 2px 5px 2px 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-}
-button.boton:hover {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+img.mi-cuenta {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
 }
 /* --------------------------------------------------- CONTENIDO -----------------------------------------------*/
 main.contenido {
@@ -149,7 +113,8 @@ main.contenido {
 
 img.market {
     width: 100%;
-    height: 300px;
+    height: calc(100vh - 7rem);
+    min-height: 50rem;
     background-repeat: no-repeat;
     object-fit: cover;
 }

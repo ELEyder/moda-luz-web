@@ -1,37 +1,19 @@
-<?php
-session_start();
-	if (!isset($_SESSION['nombre'])){
-		$texto = 	'<a class="perfil" href="'. $_ENV['URL'] .'form">
-						Entrar
-					</a>';
-	} else {
-		$texto = 	'
-					<div class="foto-perfil">
-						<img class="foto-perfil" src="content/img/foto-perfil.png">
-					</div>
-					<a href="'. $_ENV['URL'] .'form/cerrar">
-					<div class="nombre-perfil">	
-							<p class="nombre-perfil">'. $_SESSION['nombre'] .'</p>	
-					</div>
-					</a>';
-					
-	}
-	echo '
 		<header>
 			<div class = "logo">
-				<a href="views/home/index.php">
+				<a href="main">
 					<img class="logo" src="content/img/logo.png"> 
 				</a>
 			</div>
-			<div class = "titulo"> 
-            	<h1 class="titulo">LIBERTY MARKET</h1>
+            <h1 class="titulo">CONFECCIONES FELIPE</h1>
+				<form class="buscador" action="buscador" method="get">
+					<input class="buscador" type="text" placeholder="Busca en Liberty Market" name="busqueda">
+					<button class="buscador" type="submit">L</button>
+				</form>
+			<div class="mi-cuenta">
+				<h1 class="mi-cuenta" >Mi Cuenta</h1>
+				<img class="mi-cuenta" src="content/img/foto-perfil.png" alt="foto">
 			</div>
-			<div class="buscador">
-				<input class="buscador" type="text" placeholder="Busca en el catálogo de Liberty Market" name="busqueda"> 
+			<div class="carrito">
+				<h1>C</h1>
 			</div>
-			<div class="perfil">'
-				. $texto .
-			'</div>
 		</header>
-	';
-?>

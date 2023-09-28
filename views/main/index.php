@@ -30,7 +30,7 @@
                 }
                 echo '
                 <div class="prenda">
-                    <a class="prenda" href="detalles.php?id='. $id .'">
+                    <a class="prenda" href="https://wa.me/51919593169?text=Buenas Noches, estoy interesado en el producto: '. $nombre .'. Solicito más información, por favor :)">
                     <div class="imagen">
                         <img class="prenda" src="'.$img.'" alt="'.$nombre.'">
                     </div>

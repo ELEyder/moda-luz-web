@@ -56,19 +56,19 @@ img.red {
 img.red:last-child{
     margin-right: 0px;
 }
-h1 {
+footer h1 {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
     margin: 0px;
     margin-bottom: 1rem;
 }
-p{
+footer p{
     font-size: 1.5rem;
     color: white;
     margin: 0px;
     margin-bottom: 1rem;
 }
-p:last-child {
+footer p:last-child {
     margin-bottom: 0rem;
 }

@@ -8,7 +8,7 @@
             <h1 class="titulo">CONFECCIONES FELIPE</h1>
 				<form class="buscador" action="buscador" method="get">
 					<input class="buscador" type="text" placeholder="Busca en Liberty Market" name="busqueda">
-					<button class="buscador" type="submit">L</button>
+					<button class="buscador" type="submit"><img class="lupa" src="content/img/icons/lupa.svg" alt=""></button>
 				</form>
 			<div class="mi-cuenta">
 				<h1 class="mi-cuenta" >Mi Cuenta</h1>

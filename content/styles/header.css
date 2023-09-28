@@ -32,6 +32,7 @@ h1.titulo{
     color: white;
     font-size: 3rem;
     font-weight: bolder;
+    margin: 0rem;
     margin-right: var(--separación-divs-header);
 }
 /*----------------- Contenedor Busqueda -----------------*/
@@ -49,20 +50,24 @@ form.buscador{
 }
 input.buscador{
     width: 40rem;
-    height: 3rem;
+    height: 4rem;
     outline: none; /* para que no aparezca la linea negra por defecto */
     margin: 0px;
     padding-left: 1.5rem;
     border: 0px;
 }
 button.buscador{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     background-color: white;
     outline: none; /* para que no aparezca la linea negra por defecto */
     margin: 0px;
     padding: 0px;
     border: 0px;
+}
+img.lupa {
+    width: 2rem;
+    height: 2rem;
 }
 /*--------------  Contenedor PERFIL--------------- */
 div.mi-cuenta{
@@ -79,6 +84,7 @@ h1.mi-cuenta {
     color: white;
     text-align: center;
     transition: 300ms;
+    margin: 0rem;
     margin-right: 1rem;
 }
 

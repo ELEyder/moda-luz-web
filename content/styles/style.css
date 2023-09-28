@@ -35,7 +35,8 @@ main.contenido {
 
 img.market {
     width: 100%;
-    height: calc(100vh - 7rem);
+    /*height: calc(100vh - 7rem);*/
+    height: 30rem;
     min-height: 50rem;
     background-repeat: no-repeat;
     object-fit: cover;

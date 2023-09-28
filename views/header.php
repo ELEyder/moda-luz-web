@@ -10,10 +10,14 @@
 					<input class="buscador" type="text" placeholder="Busca en Liberty Market" name="busqueda">
 					<button class="buscador" type="submit"><img class="lupa" src="content/img/icons/lupa.svg" alt=""></button>
 				</form>
+				<a href="form">
 			<div class="mi-cuenta">
-				<h1 class="mi-cuenta" >Mi Cuenta</h1>
-				<img class="mi-cuenta" src="content/img/foto-perfil.png" alt="foto">
+				
+					<h1 class="mi-cuenta" >Mi Cuenta</h1>
+					<img class="mi-cuenta" src="content/img/foto-perfil.png" alt="foto">
+				
 			</div>
+			</a>
 			<div class="carrito">
 				<img class="carrito" src="content/img/icons/cart.svg" alt="Carrito de Compras">
 			</div>

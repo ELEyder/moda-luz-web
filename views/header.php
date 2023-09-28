@@ -1,3 +1,4 @@
+		<link rel="stylesheet" href="content/styles/header.css">
 		<header>
 			<div class = "logo">
 				<a href="main">
@@ -14,6 +15,6 @@
 				<img class="mi-cuenta" src="content/img/foto-perfil.png" alt="foto">
 			</div>
 			<div class="carrito">
-				<h1>C</h1>
+				<img class="carrito" src="content/img/icons/cart.svg" alt="Carrito de Compras">
 			</div>
 		</header>

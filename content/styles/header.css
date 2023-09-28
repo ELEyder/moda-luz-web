@@ -1,0 +1,93 @@
+:root {
+    --color-primario: #FF741C;
+    --color-secundario: #B8642F;
+    --fuente-principal: 'Fira Sans', sans-serif;
+    --separación-divs-header: 4rem;
+    --ancho-card: 24rem;
+}
+html{
+    font-size: 10px;
+}
+/* ---------------------------------------------------------------- CABECERA ------------------------------------------------------*/
+header {
+    height: 7rem;
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Se mantienen al centro horizontalmente */
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* --------------- Contenedor LOGO ------------------- */
+div.logo, img.logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: var(--separación-divs-header);
+}
+/*----------------- Contenedor Titulo -----------------*/
+/* Titulo */
+h1.titulo{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-right: var(--separación-divs-header);
+}
+/*----------------- Contenedor Busqueda -----------------*/
+
+form.buscador{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px var(--color-secundario);
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    margin-block-end: 0em;
+    margin-right: var(--separación-divs-header);
+}
+input.buscador{
+    width: 40rem;
+    height: 3rem;
+    outline: none; /* para que no aparezca la linea negra por defecto */
+    margin: 0px;
+    padding-left: 1.5rem;
+    border: 0px;
+}
+button.buscador{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    outline: none; /* para que no aparezca la linea negra por defecto */
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+/*--------------  Contenedor PERFIL--------------- */
+div.mi-cuenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--separación-divs-header);
+}
+
+h1.mi-cuenta {
+    font-size: 2rem;
+    padding: 0px;
+    color: white;
+    text-align: center;
+    transition: 300ms;
+    margin-right: 1rem;
+}
+
+img.mi-cuenta {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+div.carrito, img.carrito{
+    width: 4rem;
+    height: 4rem;
+}

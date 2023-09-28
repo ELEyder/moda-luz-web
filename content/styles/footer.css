@@ -1,0 +1,74 @@
+:root {
+    --color-primario: #FF741C;
+    --color-secundario: #B8642F;
+    --fuente-principal: 'Fira Sans', sans-serif;
+    --separación-divs-header: 4rem;
+    --ancho-card: 24rem;
+}
+html{
+    font-size: 10px;
+}
+/* ------------------------------------------------------------ PIE --------------------------------------- */
+footer{
+    height: 33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secundario);
+}
+div.contenido-footer{
+    display: flex;
+    flex-direction: row;
+}
+.f1 , .f2, .f3, .f4 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-right: 10rem;
+}
+.f1 {
+    align-items: center;
+}
+.f4{
+    margin-right: 0rem;
+}
+
+img.logo-footer {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid white 2px;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+div.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.red {
+    width: 3rem;
+    height: 3rem;
+    margin: 0px;
+    margin-right: 4px;
+}
+img.red:last-child{
+    margin-right: 0px;
+}
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.5rem;
+    color: white;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+p:last-child {
+    margin-bottom: 0rem;
+}

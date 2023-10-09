@@ -18,7 +18,7 @@
 			<p>Pedidos a todo precio</p>
 		</div>
 		<div class="f3">
-			<h1>Confecciones Felipe</h1>
+			<h1>Moda's Luz</h1>
 			<p>¿Quiénes Somos?</p>
 			<p>Política de cookies</p>
 			<p>Vende tus productos</p>

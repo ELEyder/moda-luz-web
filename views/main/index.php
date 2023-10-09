@@ -1,6 +1,6 @@
 <html lang="es">
     <head>
-        <title>LIBERTY MARKET S.A.</title>
+        <title>MODA'S LUZ</title>
         <meta name="author" content="Eyder Huayta Tantavilca">
         <meta name="description" content="Mercado en linea de alimentos.">
         <link rel="stylesheet" type="text/css" href="content/styles/style.css">

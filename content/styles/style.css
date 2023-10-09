@@ -1,24 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
-
-:root {
-    --color-primario: #FF741C;
-    --color-secundario: #B8642F;
-    --fuente-principal: 'Fira Sans', sans-serif;
-    --separación-divs-header: 4rem;
-    --ancho-card: 24rem;
-}
-html{
-    font-size: 10px;
-}
-body {
-    background-color: var(--color-primario);
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--fuente-principal); 
-}
-a{
-    text-decoration: none;
-}
+@import url(root.css);
 
 /* --------------------------------------------------- CONTENIDO -----------------------------------------------*/
 main.contenido {
@@ -43,4 +23,110 @@ img.market {
 }
 p {
     margin-bottom: 0px;
+}
+
+
+/* --------------------------------------------------- CATÁLOGO -----------------------------------------------*/
+
+section.catalogo{
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+div.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+}
+h1.mas-vendidos{
+    color: var(--color-primario);
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 5rem;
+    width: max-content;
+    height: max-content;
+}
+div.catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+div.fila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    margin-bottom: 4rem;
+}
+div.fila:last-child{
+    margin-bottom: 0rem;
+}
+
+div.prenda {
+    width: var(--ancho-card);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 4rem;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+div.prenda:first-child{
+    margin-left: 0rem;
+}
+div.imagen {
+    width: var(--ancho-card);
+    height: var(--ancho-card);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img.prenda {
+    height: var(--ancho-card);
+    width:  var(--ancho-card);
+    transition: 300ms;
+}
+img.prenda:hover {
+    width: calc(var(--ancho-card) + 4rem);
+    height: calc(var(--ancho-card) + 4rem);
+}
+div.texto {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    padding: 1rem;
+}
+h1.prenda{
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    font-weight: 400;
+    width: 180px;
+}
+p.prenda{
+    color: var(--color-primario);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    width: 180px;
+}
+
+
+
+a.regresar:hover {
+    color: rgb(0, 38, 255);
 }

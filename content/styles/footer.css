@@ -1,10 +1,4 @@
-:root {
-    --color-primario: #FF741C;
-    --color-secundario: #B8642F;
-    --fuente-principal: 'Fira Sans', sans-serif;
-    --separación-divs-header: 4rem;
-    --ancho-card: 24rem;
-}
+@import url(root.css);
 html{
     font-size: 10px;
 }
@@ -14,7 +8,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-secundario);
+    background-color: var(--color-cuarto);
 }
 div.contenido-footer{
     display: flex;

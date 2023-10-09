@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'ElegantLux'; /* El nombre que quieras darle a tu fuente */
+    src: url('../fuentes/ElegantLux.otf');
+  }
+:root {
+    --color-primario: #142247;
+    --color-secundario: #EBE2D9;
+    --color-terceario: #5A77B3;
+    --color-cuarto: #232232;
+    --fuente-principal: 'ElegantLux';
+    --separación-divs-header: 4rem;
+    --ancho-card: 24rem;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primario);
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fuente-principal); 
+}

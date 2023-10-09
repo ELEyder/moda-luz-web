@@ -1,17 +1,12 @@
-:root {
-    --color-primario: #FF741C;
-    --color-secundario: #B8642F;
-    --fuente-principal: 'Fira Sans', sans-serif;
-    --separación-divs-header: 4rem;
-    --ancho-card: 24rem;
-}
+@import url(root.css);
+
 html{
     font-size: 10px;
 }
 /* ---------------------------------------------------------------- CABECERA ------------------------------------------------------*/
 header {
     height: 7rem;
-    background-color: var(--color-primario);
+    background-color: var(--color-cuarto);
     display: flex;
     flex-direction: row;
     align-items: center; /* Se mantienen al centro horizontalmente */

@@ -5,7 +5,7 @@
 					<img class="logo" src="content/img/logo.png"> 
 				</a>
 			</div>
-            <h1 class="titulo">CONFECCIONES FELIPE</h1>
+            <h1 class="titulo">Moda's Luz</h1>
 				<form class="buscador" action="buscador" method="get">
 					<input class="buscador" type="text" placeholder="Busca en Liberty Market" name="busqueda">
 					<button class="buscador" type="submit"><img class="lupa" src="content/img/icons/lupa.svg" alt=""></button>

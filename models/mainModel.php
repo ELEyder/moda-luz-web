@@ -7,11 +7,11 @@ class MainModel extends Model{
     public function selectProductos(){
         try{
             $cn = $this->db->connect();
-            $tablaSQL = mysqli_query($cn,'select * from prenda');
+            $tablaSQL = mysqli_query($cn,'select * from Prenda');
             return $tablaSQL;
         }
-        catch (Exception){ 
-            echo 'ERRORRRRRRRRRRR';
+        catch (Exception $e){ 
+            echo 'ERROR en : ' . $e;
         }
     }
 }

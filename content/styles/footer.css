@@ -29,10 +29,8 @@ div.contenido-footer{
 }
 
 img.logo-footer {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: solid white 2px;
+    width: 15rem;
+    height: 15rem;
     margin: 0px;
     margin-bottom: 1rem;
 }

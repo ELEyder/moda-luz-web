@@ -14,15 +14,14 @@
         </main>
         <section class="catalogo">
             <div class="contenido">
-            <h1 class="mas-vendidos">Prendas más vendidas:</h1>
+            <h1 class="nuestras-prendas">Nuestras Prendas:</h1>
             <div class="catalogo">
             <?php
             $cardsFilas = 4;
             // Extraemos todas las filas de la tabla
             while ($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)) {
                 $id = $row['IdPrenda'];
-                $nombre = $row['Nombre'];
-                $desc = $row['Descripcion'];
+                $nombre = $row['NombrePrenda'];
                 $precio = $row['Precio'];
                 $img = "content/img/catalogo/" . $id . ".webp";
                 if ($id == '1' or ((($id - 1) % $cardsFilas) == 0)){

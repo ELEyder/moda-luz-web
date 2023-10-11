@@ -5,14 +5,16 @@ html{
 }
 /* ---------------------------------------------------------------- CABECERA ------------------------------------------------------*/
 header {
+    width: 100%;
     height: 7rem;
-    background-color: var(--color-cuarto);
+    background-color: var(--color-primario);
     display: flex;
     flex-direction: row;
     align-items: center; /* Se mantienen al centro horizontalmente */
     justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: fixed;
 }
 /* --------------- Contenedor LOGO ------------------- */
 div.logo, img.logo {

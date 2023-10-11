@@ -3,10 +3,9 @@
     src: url('../fuentes/ElegantLux.otf');
   }
 :root {
-    --color-primario: #142247;
-    --color-secundario: #EBE2D9;
-    --color-terceario: #5A77B3;
-    --color-cuarto: #232232;
+    --color-primario: #0A1A4B;
+    --color-secundario: #D5C1A6;
+    --color-terceario: #b0bad5;
     --fuente-principal: 'ElegantLux';
     --separación-divs-header: 4rem;
     --ancho-card: 24rem;

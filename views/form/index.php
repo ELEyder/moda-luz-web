@@ -6,55 +6,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="content/styles/form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="content/img/icon.ico" type='image/x-icon'>
     <title>Bienvenido</title>
 </head>
 
 <body>
-    <header>
-
+    <header class="form">
+        <a class="regresar" href="<?php $_ENV['URL'] ?>main">Regresar</a>
     </header>
+
     <main>
-        <div class="contenedor_todo">
-            <div class="contenedor_textos">
-                <div class="registrarse">
+        <div class="todo">
+            <div class="textos">
+                <div class="texto">
                     <h1>¿No tienes una cuenta?</h1>
-                    <p>Crea una cuenta para poder comprar :)</p>
-                    <button id="btnCrear">Crear cuenta</button>
+                    <h2>Crea una cuenta para poder comprar</h2>
+                    <a class="boton" href="#" id="btnCrear">Crear cuenta</a>
                 </div>
-                <div class="iniciar_sesion">
+                <div class="texto">
                     <h1>¿Ya tienes una cuenta?</h1>
-                    <p>Iniciar sesión para poder ver tus productos</p>
-                    <button id="btnIniciar">Iniciar sesión</button>
+                    <h2>Iniciar sesión para poder ver tus productos</h2>
+                    <a class="boton" href="#" id="btnIniciar">Iniciar sesión</a>
                 </div>
             </div>
-            <div class="contenedor_formularios">
-                <form action="registrar" method="POST" class="register">
-                    <h1>Registrarse</h1>
-                    <input type="text" placeholder="Nombre" name="nombre">
-                    <input type="text" placeholder="Apellido" name="apellido">
-                    <input type="email" placeholder="Correo electrónico" name="correo">
-                    <input type="number" placeholder="Numero" name="numero">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
-                    <button type="submit">Registrarse</button>
-                </form>
-                <form action="form/iniciar" method="POST" class="login">
-                    <h1>Inicia Sesión</h1>
-                    <input type="email" placeholder="Correo electrónico" name="icorreo" required>
-                    <input type="password" placeholder="Contraseña" name="icontrasena" required>
-                    <button type="submit">Iniciar Seción</button>
-                </form>
-            </div>
+            <form action="registrar" method="POST" class="register">
+                <h1>Registrarse</h1>
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="text" placeholder="Apellido" name="apellido">
+                <input type="email" placeholder="Correo electrónico" name="correo">
+                <input type="password" placeholder="Contraseña" name="contrasena">
+                <button type="submit">Registrarse</button>
+            </form>
+            <form action="form/iniciar" method="POST" class="login">
+                <h1>Inicia Sesión</h1>
+                <input type="email" placeholder="Correo electrónico" name="icorreo" required>
+                <input type="password" placeholder="Contraseña" name="icontrasena" required>
+                <button type="submit">Iniciar Seción</button>
+            </form>
         </div>
     </main>
-    <footer>
-        <a href="<?php $_ENV['URL'] ?>main">
-            <button>REGRESAR</button>
-        </a>
-    </footer>
     <script src="scripts/script.js"></script>
     <?php
     	session_start();

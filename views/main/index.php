@@ -10,7 +10,7 @@
     <body>
         <?php require_once 'views/header.php' ?>
         <main class="contenido">
-            <img class ="market"src='content/img/fondos/banner1.gif'>
+            <img class ="market"src='content/img/fondos/banner1.png'>
         </main>
         <section class="catalogo">
             <div class="contenido">
@@ -24,18 +24,30 @@
                 $nombre = $row['NombrePrenda'];
                 $precio = $row['Precio'];
                 $img = "content/img/catalogo/" . $id . ".webp";
+                $categoria = $row['NombreCategoria'];
+                $sexo = $row['NombreSexo'];
                 if ($id == '1' or ((($id - 1) % $cardsFilas) == 0)){
                     echo '<div class="fila">';
                 }
                 echo '
                 <div class="prenda">
-                    <a class="prenda" href="https://wa.me/51919593169?text=Buenas Noches, estoy interesado en el producto: '. $nombre .'. Solicito más información, por favor :)">
+                    
                     <div class="imagen">
                         <img class="prenda" src="'.$img.'" alt="'.$nombre.'">
+                    </div>
+                    <div class="etiquetas">
+                        <a class="sexo">'.$sexo.'</a>
+                        <a class="categoria">'.$categoria.'</a> 
                     </div>
                     <div class="texto">
                         <h1 class="prenda">'.$nombre.'</h1>
                         <p class="prenda">S/.'.$precio.'</p>
+                    </div>
+                    <div class="botones">
+                        <a class="prenda" href="https://wa.me/51919593169?text=Buenas Noches, estoy interesado en el producto: '. $nombre .'. Solicito más información, por favor :)">
+                            Agregar al Carrito
+                        </a>
+                        <img class="corazon" src="content/img/icons/heart.svg">
                     </div>
                     </a>
                 </div>

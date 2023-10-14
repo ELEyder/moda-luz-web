@@ -20,8 +20,12 @@ a{
 }
 
 body {
-    background-color: var(--color-primario);
+
+    background-color: var(--color-secundario);
     margin: 0px;
     padding: 0px;
     font-family: var(--fuente-principal); 
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
 }

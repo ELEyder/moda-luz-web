@@ -1,4 +1,10 @@
 @import url(root.css);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /* --------------------------------------------------- HEADER -----------------------------------------------*/
 
 header.form{
@@ -24,6 +30,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    max-width: 1700px;
 }
 /* --------------------------------------------------- CONTENEDOR DE TODO -----------------------------------------------*/
 
@@ -84,29 +92,28 @@ a.boton:hover{
 
 .login,
 .register{
-    position: absolute;
-    width: 100%;
-    max-width: 310px;
+    max-width: 260px;
     left: 10px;
     background-color: white;
-    padding: 100px 20px;
     margin: 0px;
     border-radius: 20px;
+    top: 50%; /* Centrar verticalmente */
+    transform: translate(-0%, -50%); /* Corregir el centro */
+    opacity: 1; /* Inicialmente visible */
+    transition:  0.3s ease; /* Transición de opacidad */
+
 }
 .login{
+    position: absolute;
     padding: 80px 40px;
-    top: -10px;
-    display: none;
-    transition: 200ms;
+    left: 200%;
 
+    /* opacity: 0; */
 }
 .register{
-    top: -40px;
+    position: absolute;
     padding: 40px 40px;
-    display: block;
-    right: 200px;
-    transition: 200ms;
-
+    /* opacity: 1; */
 }
 .login h1,
 .register h1{

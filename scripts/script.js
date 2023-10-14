@@ -3,16 +3,26 @@ var formularioRegistro = document.querySelector(".register");
 var btnIniciar = document.getElementById("btnIniciar");
 var btnCrear = document.getElementById("btnCrear");
 function moverDerecha(){
-    formularioInicio.style.display = "block";
-    formularioRegistro.style.display ="none";
-    formularioInicio.style.left = "0px";
-    formularioInicio.style.right = "10px";
+    //Mostrar y ocultar el formulario
+
+    // formularioInicio.style.opacity ="1";
+    // formularioRegistro.style.opacity ="0";
+    //Moverlos a la derecha
+    formularioInicio.style.left = "376px";
+    formularioRegistro.style.left ="-150%";
+    //Animacion
+    
 }
 function moverIzquierda(){
-    formularioInicio.style.display = "none";
-    formularioRegistro.style.display ="block";
-    formularioInicio.style.right = "0px";
-    formularioInicio.style.left = "10px";
+    //Mostrar y ocultar el formulario
+
+    // formularioInicio.style.opacity ="0";
+    // formularioRegistro.style.opacity ="1";
+    //Moverlos a la izquierda
+    formularioRegistro.style.left = "10px";
+    formularioInicio.style.left = "200%";
+    //Animacion
+    
 }
 btnIniciar.addEventListener("click", moverDerecha);
 btnCrear.addEventListener("click", moverIzquierda);

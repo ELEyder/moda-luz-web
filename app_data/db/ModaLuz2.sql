@@ -25,6 +25,11 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4;
 
+INSERT INTO `categoria` (`IdCategoria`, `NombreCategoria`) VALUES
+(1, 'Polo'),
+(2, 'Polera'),
+(3, 'Vestido');
+
 
 -- -----------------------------------------------------
 -- Table `modaluz`.`sexo`

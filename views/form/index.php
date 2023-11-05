@@ -31,16 +31,16 @@
             </div>
             <form action="registrar" method="POST" class="register">
                 <h1>Registrarse</h1>
-                <input type="text" placeholder="Nombre" name="nombre">
-                <input type="text" placeholder="Apellido" name="apellido">
+                <input type="text" placeholder="Nombre" name="nombres">
+                <input type="text" placeholder="Apellido" name="apellidos">
                 <input type="email" placeholder="Correo electrónico" name="correo">
                 <input type="password" placeholder="Contraseña" name="contrasena">
                 <button type="submit">Registrarse</button>
             </form>
-            <form action="form/iniciar" method="POST" class="login">
+            <form action="iniciar" method="POST" class="login">
                 <h1>Inicia Sesión</h1>
-                <input type="email" placeholder="Correo electrónico" name="icorreo" required>
-                <input type="password" placeholder="Contraseña" name="icontrasena" required>
+                <input type="email" placeholder="Correo electrónico" name="correo" required>
+                <input type="password" placeholder="Contraseña" name="contrasena" required>
                 <button type="submit">Iniciar Seción</button>
             </form>
         </div>

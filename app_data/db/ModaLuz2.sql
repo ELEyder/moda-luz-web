@@ -92,7 +92,9 @@ CREATE TABLE IF NOT EXISTS `modaluz`.`rol` (
   PRIMARY KEY (`IdRol`))
 ENGINE = InnoDB;
 
-
+INSERT INTO `rol` (`IdRol`, `NombreRol`) VALUES
+(1, 'admin'),
+(2, 'user')
 -- -----------------------------------------------------
 -- Table `modaluz`.`usuario`
 -- -----------------------------------------------------
@@ -104,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `modaluz`.`usuario` (
   `Correo` VARCHAR(50) NOT NULL,
   `Contrasena` VARCHAR(250) NOT NULL,
   `Telefono` INT(50) NULL,
-  PRIMARY KEY (`IdUsuario`, `Correo`),
+  PRIMARY KEY (`IdUsuario`),
   INDEX `IdRol_idx` (`IdRol` ASC),
   UNIQUE INDEX `IdUsuario_UNIQUE` (`IdUsuario` ASC),
   UNIQUE INDEX `Correo_UNIQUE` (`Correo` ASC),

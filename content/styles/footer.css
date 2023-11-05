@@ -4,11 +4,12 @@ html{
 }
 /* ------------------------------------------------------------ PIE --------------------------------------- */
 footer{
+
     height: 33rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-cuarto);
+    background-color: var(--color-primario);
 }
 div.contenido-footer{
     display: flex;

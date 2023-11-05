@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `modaluz`.`usuario` (
   `Nombres` VARCHAR(20) NOT NULL,
   `Apellidos` VARCHAR(20) NOT NULL,
   `Correo` VARCHAR(50) NOT NULL,
-  `Contrasena` VARCHAR(250) NOT NULL,
+  `Contrasena` VARCHAR(300) NOT NULL,
   `Telefono` INT(50) NULL,
   PRIMARY KEY (`IdUsuario`),
   INDEX `IdRol_idx` (`IdRol` ASC),

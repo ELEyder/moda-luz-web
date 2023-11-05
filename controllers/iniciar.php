@@ -8,7 +8,6 @@
             $correo = $_POST['correo'];
             $contrasena = $_POST['contrasena'];
             $contrasena = sha1($contrasena);
-            $correo = $_POST['correo'];
             $datosUsuario = $this->iniciarSesion($correo , $contrasena);
             $this->view->tablaSQL = $datosUsuario;
             $this->view->render('iniciar/index');

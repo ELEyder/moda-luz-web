@@ -118,6 +118,7 @@ CREATE TABLE IF NOT EXISTS `modaluz`.`usuario` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
+INSERT INTO `usuario` (`IdUsuario`, `IdRol`, `Nombres`, `Apellidos`, `Correo`, `Contrasena`) VALUES (1, 1, "admin", "admin" , "eyderhuayta26@gmail.com", "513b85dbde69a1ad93ffa953a6380666c32d72e5");
 
 -- -----------------------------------------------------
 -- Table `modaluz`.`carrito`

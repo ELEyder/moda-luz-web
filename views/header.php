@@ -22,7 +22,7 @@
 			<div class='carrito'>
 				<img class='carrito' src='content/img/icons/cart.svg' alt='Carrito de Compras'>
 			</div>
-	</header>';";
+	</header>";
 	} else {
 		echo "<link rel='stylesheet' href='content/styles/header.css'>
 		<header>
@@ -45,6 +45,6 @@
 			<div class='carrito'>
 				<img class='carrito' src='content/img/icons/cart.svg' alt='Carrito de Compras'>
 			</div>
-	</header>';";
+	</header>";
 	}
 ?>

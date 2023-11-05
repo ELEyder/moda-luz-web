@@ -7,7 +7,7 @@ class IniciarModel extends Model{
     public function iniciarSesion($correo, $contrasena){
         try{
             $cn = $this->db->connect();
-            $tablaSQL = mysqli_query($cn,'SELECT * FROM usuario WHERE Correo = "' . $correo  . '" AND Contrasena = "' . $contrasena . '"');
+            $tablaSQL = mysqli_query($cn,'SELECT * FROM `usuario` WHERE Correo LIKE "'. $correo .'" AND Contrasena LIKE "'. $correo .'"');
             return $tablaSQL;
         }
         catch (Exception $e){ 

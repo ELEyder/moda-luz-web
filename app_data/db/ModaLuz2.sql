@@ -76,10 +76,10 @@ DEFAULT CHARACTER SET = utf8mb4;
 INSERT INTO `prenda` (`IdPrenda`, `NombrePrenda`, `Precio`, `Descripcion`, `IdSexo`, `IdCategoria`, `Imagen` ) VALUES
 (1, 'Polo Overside', 39.50, 'undefined',3,1,'polo-overside'),
 (2, 'Polo One Piece', 39.50, 'undefined',3,1,'polo-one-piece'),
-(3, 'Polo Monkey D. Luffy Gear 5', 39.50, 'undefined',3,1,'polo-monkey-d-luffy-gear-5'),
+(3, 'Polo Monkey D. Luffy', 39.50, 'undefined',3,1,'polo-monkey-d-luffy'),
 (4, 'Polo Roronoa Zoro', 39.50, 'undefined',3,1,'polo-roronoa-zoro'),
-(5, 'Polo Monkey D. Luffy Gear 4', 39.50, 'undefined',3,1,'polo-monkey-d-luffy-gear-4'),
-(6, 'Polo Monkey D. Luffy Gear 3', 39.50, 'undefined',3,1,'polo-monkey-d-luffy-gear-3'),
+(5, 'Polo Nami', 39.50, 'undefined',3,1,'polo-nami'),
+(6, 'Polo Mob Psycho', 39.50, 'undefined',3,1,'polo-mob-psycho'),
 (7, 'Polera Con Capucha', 49.50, 'undefined',3,2,'polera-con-capucha'),
 (8, 'Vestido Con Patrones', 99.50, 'undefined',3,3,'vestido-con-patrones');
 

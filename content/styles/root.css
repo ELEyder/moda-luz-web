@@ -21,7 +21,7 @@ a{
 
 body {
 
-    background-color: var(--color-secundario);
+    background-color: white;
     margin: 0px;
     padding: 0px;
     font-family: var(--fuente-principal); 

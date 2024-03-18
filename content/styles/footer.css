@@ -9,7 +9,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #01040f;
+    background-color: var(--color-primario);
 }
 div.contenido-footer{
     display: flex;

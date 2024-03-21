@@ -8,7 +8,8 @@
             $_SESSION['Correo'] = $row['Correo'];
             $_SESSION['Contrasena'] = $row['Contrasena'];
             $_SESSION['Telefono'] = $row['Telefono'];
-            $_SESSION['imagen'] = $row['imagen'];
+            $_SESSION['imagen'] = !empty($row['imagen']) ? $row['imagen'] : null;
+
         }
         ?>
 <!DOCTYPE html>

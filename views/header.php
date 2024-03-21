@@ -22,7 +22,7 @@ if (isset($_SESSION["Nombres"])) {
 
 
 						if (isset($_SESSION["imagen"])) {
-							echo "<img class='mi-cuenta' src='data:image/jpg;base64," . base64_encode($_SESSION['imagen']) . "' alt='foto'>";
+							echo "<img class='mi-cuenta' src='data:image/jpg;base64," . base64_encode($_SESSION['imagen']) . "' alt='fotod'>";
 						} else {
 							echo "<img class='mi-cuenta' src='content/img/foto-perfil.png' alt='foto'>";
 						}

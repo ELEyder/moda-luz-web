@@ -1,5 +1,6 @@
 <?php
 
+
 Class Database {
 	function __construct(){
 		//echo 'nueva conexion DB';

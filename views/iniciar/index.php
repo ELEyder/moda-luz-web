@@ -7,6 +7,8 @@
             $_SESSION['Apellidos'] = $row['Apellidos'];
             $_SESSION['Correo'] = $row['Correo'];
             $_SESSION['Contrasena'] = $row['Contrasena'];
+            $_SESSION['Telefono'] = $row['Telefono'];
+            $_SESSION['imagen'] = $row['imagen'];
         }
         ?>
 <!DOCTYPE html>

@@ -29,7 +29,6 @@ p {
 /* --------------------------------------------------- CATÁLOGO -----------------------------------------------*/
 
 section.catalogo{
-    background-color: var(--color-secundario);
     display: flex;
     align-items: center;
     justify-content: center;

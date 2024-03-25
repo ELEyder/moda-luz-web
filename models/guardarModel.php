@@ -1,10 +1,10 @@
 <?php
 
-class IniciarModel extends Model{
+class GuardarModel extends Model{
     public function __construct() {
         parent::__construct();
     }
-    public function iniciarSesion($correo, $contrasena){
+    public function guardarCambios($correo, $contrasena){
         try{
             $cn = $this->db->connect();
             $tablaSQL = mysqli_query($cn,'SELECT * FROM `usuario` WHERE Correo LIKE "'. $correo .'" AND Contrasena LIKE "'. $contrasena .'"');

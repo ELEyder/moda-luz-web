@@ -5,7 +5,7 @@ if (isset($_SESSION["Nombres"])) {
 		<header>
 			<div class='logo'>
 				<a href='main'>
-					<img class='logo' src='content/img/logo.png'> 
+					<img class='logo' src='content/img/logo/logo.png'> 
 				</a>
 			</div>
 			<h1 class='titulo'>Moda's Luz</h1>
@@ -64,7 +64,7 @@ if (isset($_SESSION["Nombres"])) {
 		<header>
 			<div class = 'logo'>
 				<a href='main'>
-					<img class='logo' src='content/img/logo.png'> 
+					<img class='logo' src='content/img/logo/logo.png'> 
 				</a>
 			</div>
 			<h1 class='titulo'>Moda's Luz</h1>

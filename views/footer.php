@@ -3,7 +3,7 @@
 <footer>
 	<div class="contenido-footer">
 		<div class="f1">
-			<img class='logo-footer' src="content/img/logo.png" alt="Logo">
+			<img class='logo-footer' src="content/img/logo/logo.png" alt="Logo">
 			<div class="redes">
 				<img class='red' src="content/img/icons/facebook.svg" alt="">
 				<img class='red' src="content/img/icons/instagram.svg" alt="">

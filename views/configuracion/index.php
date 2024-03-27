@@ -92,7 +92,7 @@ session_start();
                                 if (isset($_SESSION["imagen"])) {
                                     echo "<img id='imgprofile' class='profile-image' src='data:image/jpg;base64," . base64_encode($_SESSION['imagen']) . "' alt='Profile Image'>";
                                 } else {
-                                    echo "<img id='imgprofile' class='profile-image' src='content/img/foto-perfil.png' alt='Profile Image'>";
+                                    echo "<img id='imgprofile' class='profile-image' src='content/img/foto-perfil/foto-perfil.png' alt='Profile Image'>";
                                 }
                                 ?>
                                 <div class="input-file-container">

@@ -77,7 +77,7 @@ if (isset($_SESSION["Nombres"])) {
 
 					<div class='mi-cuenta'>    
 						<h1 class='mi-cuenta' >Mi Cuenta</h1>
-						<img class='mi-cuenta' src='content/img/foto-perfil.png' alt='fotox'>
+						<img class='mi-cuenta' src='content/img/foto-perfil/foto-perfil.png' alt='fotox'>
 					</div>
 					</div>
 					<div class='dropdown' id='dropdown'>

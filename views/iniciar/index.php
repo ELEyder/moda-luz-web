@@ -1,8 +1,7 @@
 <?php
         
         if($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)){
-            while ($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)) {
-                session_start();
+            session_start();
                 $_SESSION['IdUsuario'] = $row['IdUsuario'];
                 $_SESSION['IdRol'] = $row['IdRol'];
                 $_SESSION['Nombres'] = $row['Nombres'];
@@ -11,8 +10,6 @@
                 $_SESSION['Contrasena'] = $row['Contrasena'];
                 $_SESSION['Telefono'] = $row['Telefono'];
                 $_SESSION['imagen'] = !empty($row['imagen']) ? $row['imagen'] : null;
-    
-            }
             echo '
             <!DOCTYPE html>
 <html lang="en">

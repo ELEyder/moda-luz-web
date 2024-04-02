@@ -1,7 +1,6 @@
 <?php
-session_start();
 if (isset($_SESSION["Nombres"])) {
-	echo "<link rel='stylesheet' href='content/styles/header.css'>
+	echo "
 		<header>
 			<div class='logo'>
 				<a href='main'>
@@ -21,11 +20,11 @@ if (isset($_SESSION["Nombres"])) {
 
 
 
-						if (isset($_SESSION["imagen"])) {
-							echo "<img class='mi-cuenta' src='data:image/jpg;base64," . base64_encode($_SESSION['imagen']) . "' alt='fotod'>";
-						} else {
-							echo "<img class='mi-cuenta' src='content/img/foto-perfil.png' alt='foto'>";
-						}
+	if (isset($_SESSION["imagen"])) {
+		echo "<img class='mi-cuenta' src='data:image/jpg;base64," . base64_encode($_SESSION['imagen']) . "' alt='fotod'>";
+	} else {
+		echo "<img class='mi-cuenta' src='content/img/foto-perfil.png' alt='foto'>";
+	}
 
 
 
@@ -33,12 +32,12 @@ if (isset($_SESSION["Nombres"])) {
 
 
 
-					echo "</div>
+	echo "</div>
 				</div>
 				<div class='dropdown' id='dropdown'>
 					<div class='dropdown-content'>
-						<a href='cerrar'>Cerrar Sesion</a>
 						<a href='configuracion'>Cambiar Foto</a>
+						<a href='cerrar'>Cerrar Sesion</a>
 					</div>
 				</div>
 			</div>
@@ -60,7 +59,7 @@ if (isset($_SESSION["Nombres"])) {
 			</script>
 	</header>";
 } else {
-	echo "<link rel='stylesheet' href='content/styles/header.css'>
+	echo "
 		<header>
 			<div class = 'logo'>
 				<a href='main'>

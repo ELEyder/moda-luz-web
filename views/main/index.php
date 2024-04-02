@@ -1,11 +1,7 @@
+<?php session_start() ?>
 <html lang="es">
     <head>
-        <title>MODA'S LUZ</title>
-        <meta name="author" content="Eyder Huayta Tantavilca">
-        <meta name="description" content="Mercado en linea de alimentos.">
-        <link rel="stylesheet" type="text/css" href="content/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="content/styles/catalogo.css">
-        <link rel="icon" href="content/img/icon.ico" type='image/x-icon'>
+        <?php require_once("views/head.php") ?>
     </head>
     <body>
         <?php require_once 'views/header.php' ?>

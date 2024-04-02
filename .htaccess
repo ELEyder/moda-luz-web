@@ -4,4 +4,10 @@ RewriteRule ^scripts/ - [L] # Ignorar las rutas que comienzan con /content/
 RewriteRule ^vendor/ - [L] # Ignorar las rutas que comienzan con /content/
 RewriteCond %{REQUEST_URI} !^/https://wa.me/ [NC]
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+<IfModule mod_php7.c>
+    php_value session.cookie_lifetime 3600
+    php_value session.gc_maxlifetime 3600
+</IfModule>
+
 php_flag output_buffering on

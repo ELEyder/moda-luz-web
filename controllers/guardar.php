@@ -6,8 +6,8 @@ class Guardar extends Controller {
     }
 
     public function render() {
-        $correo = $_SESSION['correo'];
-        $contrasena = $_SESSION['contrasena'];
+        $correo = $_SESSION['Correo'];
+        $contrasena = $_SESSION['Contrasena'];
         $contrasena = sha1($contrasena);
         $datosUsuario = $this->guardarImagen($correo , $contrasena);
         $this->view->tablaSQL = $datosUsuario;

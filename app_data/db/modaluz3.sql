@@ -147,7 +147,7 @@ CREATE TABLE `usuario` (
   `Correo` varchar(50) NOT NULL,
   `Contrasena` varchar(300) NOT NULL,
   `Telefono` int(50) DEFAULT NULL,
-  `imagen` longblob NOT NULL
+  `imagen` longblob DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

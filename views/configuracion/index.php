@@ -82,7 +82,7 @@ session_start();
 
 <body>
     <div class="container">
-        <form method="post" action="guardar.php" enctype="multipart/form-data">
+        <form method="post" action="guardar" enctype="multipart/form-data">
             <div class="profile-container">
                 <table style="padding: 10px; width: 100%; box-sizing: border-box;" cellspacing="0" cellpadding="0">
                     <tr>

@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="content/styles/mensaje.css">
 </head>
 <?php
-        
         if($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)){
             session_start();
                 $_SESSION['IdUsuario'] = $row['IdUsuario'];

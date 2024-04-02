@@ -22,6 +22,7 @@ Class App{
         else{
             require_once 'controllers/errores.php';
             $controller = new Errores();
+            $controller->render(); //LLAMAR SU RESPECTIVA VISTA
         }
     }
 }

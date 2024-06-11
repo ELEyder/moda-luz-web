@@ -4,13 +4,12 @@
             parent::__construct();
         }
         public function render(){
-            $productos = $this->selectPrendas();
-            $this->view->tablaSQL = $productos;
+            $prendas = $this->selectPrendas();
+            $this->view->data = $prendas;
             $this->view->render('main/index');
         }
         public function selectPrendas(){
-            $tablaSQL = $this->model->selectPrendas();
-            return $tablaSQL;
+            $prendas = $this->model->selectPrendas();
+            return $prendas;
         }
     }
-?>

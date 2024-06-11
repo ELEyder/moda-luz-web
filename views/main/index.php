@@ -1,4 +1,4 @@
-<?php session_start() ?>
+<?php session_start()?>
 <html lang="es">
     <head>
         <?php require_once("views/head.php") ?>
@@ -15,7 +15,7 @@
             <?php
             $cardsFilas = 4;
             // Extraemos todas las filas de la tabla
-            while ($row = mysqli_fetch_array($this->tablaSQL ,MYSQLI_ASSOC)) {
+            foreach ($this->data as $row) {
                 $id = $row['IdPrenda'];
                 $nombre = $row['NombrePrenda'];
                 $precio = $row['Precio'];

@@ -7,15 +7,20 @@ class MainModel extends Model{
     public function selectPrendas(){
         try{
             $cn = $this->db->connect();
-            $tablaSQL = mysqli_query($cn,'SELECT prenda.*, categoria.NombreCategoria, sexo.NombreSexo
+            $query = "SELECT prenda.*, categoria.NombreCategoria, sexo.NombreSexo
             FROM prenda
             JOIN categoria ON prenda.IdCategoria = categoria.IdCategoria
-            JOIN sexo ON prenda.IdSexo = sexo.IdSexo;');
-            return $tablaSQL;
+            JOIN sexo ON prenda.IdSexo = sexo.IdSexo;";
+            $stmt = $cn->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll();
         }
         catch (Exception $e){ 
-            echo 'ERROR en : ' . $e;
+            echo "<script>
+                    alert('{$e->getMessage()}');
+                    window.location.href = '{$_ENV['URL']}error';
+                </script>";
+            exit;
         }
     }
 }
-?>

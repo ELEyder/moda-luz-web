@@ -1,6 +1,6 @@
 <?php
 class View{
-    public $tablaSQL;
+    public $data;
     function __construct(){
         //echo 'Vista Base'
     }
@@ -8,5 +8,3 @@ class View{
         require 'views/' . $nombre . '.php';
     }
 }
-
-?>

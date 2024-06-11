@@ -1,27 +1,29 @@
 <?php
-
-
 Class Database {
+	private $connection;
 	function __construct(){
-		//echo 'nueva conexion DB';
+		$host = $_ENV['DB_HOST'];
+        $db = $_ENV['DB_NAME'];
+        $user = $_ENV['DB_USER'];
+        $pass = $_ENV['DB_PASS'];
+		$dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
+
+		$options = [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+        ];
+
+		try {
+            $this->connection = new PDO($dsn, $user, $pass, $options);
+        } catch (PDOException $e) {
+            throw new Exception("Connection failed: " . $e->getMessage());
+        }
 	}
-	function connect(){
-		$cn=mysqli_connect($_ENV['DB_HOST'],$_ENV['DB_USER'],$_ENV['DB_PASSWORD']); /*ENV SE SACA DE INDEX INICAL PARA UNA VARIABLE DE ENTORNO */
-		if(!$cn){
-			echo("<script>alert('Error en la conexión.')
-			window.location.href = '". $_ENV['URL'] ."error';
-			</script>");
-		}
-		$db = mysqli_select_db($cn,$_ENV["DB_NAME"]);
-		if(!$db){
-			mysqli_close($cn);
-			echo("<script>
-			alert('Base de datos no existe.');
-			window.location.href = '". $_ENV['URL'] ."error';
-			</script>");
-		}
-		return $cn;
-	}
+
+	public function connect() {
+        return $this->connection;
+    }
 }
 
 

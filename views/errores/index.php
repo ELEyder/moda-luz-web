@@ -7,8 +7,8 @@
 </head>
 <body>
     <div class="mensaje">
-        <h1>Página no encontrada u.u 💔</h1>
-        <button onclick='location.href = "main"'>Regresar al Inicio</button>
+        <h1>Página no encontrada :(</h1>
+        <button onclick='location.href = "main"'>Regresar a la página principal</button>
     </div>
 </body>
 </html>

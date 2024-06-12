@@ -9,12 +9,10 @@
             $contrasena = $_POST['contrasena'];
             $contrasena = sha1($contrasena);
             $datosUsuario = $this->iniciarSesion($correo , $contrasena);
-            $this->view->data = $datosUsuario;
-            $this->view->render('iniciar/index');
+            $this->view->render('iniciar/index', $datosUsuario);
         }
         public function iniciarSesion($correo , $contrasena){
             $tablaSQL = $this->model->iniciarSesion($correo , $contrasena);
             return $tablaSQL;
         }
     }
-?>

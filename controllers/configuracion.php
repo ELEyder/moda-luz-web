@@ -7,4 +7,3 @@
             $this->view->render('configuracion/index');
         }
     }
-?>

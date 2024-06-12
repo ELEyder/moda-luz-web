@@ -15,7 +15,7 @@
             <?php
             $cardsFilas = 4;
             // Extraemos todas las filas de la tabla
-            foreach ($this->data as $row) {
+            foreach ($data as $row) {
                 $id = $row['IdPrenda'];
                 $nombre = $row['NombrePrenda'];
                 $precio = $row['Precio'];

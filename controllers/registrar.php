@@ -14,4 +14,3 @@
             $this->view->render('registrar/index');
         }
     }
-?>

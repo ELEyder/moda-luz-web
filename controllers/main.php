@@ -5,8 +5,7 @@
         }
         public function render(){
             $prendas = $this->selectPrendas();
-            $this->view->data = $prendas;
-            $this->view->render('main/index');
+            $this->view->render('main/index', $prendas);
         }
         public function selectPrendas(){
             $prendas = $this->model->selectPrendas();

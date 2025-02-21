@@ -1,5 +1,4 @@
 <?php
-session_start();
 class Guardar extends Controller {
     public function __construct() {
         parent::__construct();

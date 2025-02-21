@@ -1,5 +1,4 @@
 <?php
-    	session_start();
         if (!isset($_SESSION['nombre'])){
             echo '<script> alert("No tienes una sessión activa");
             window.location.href = "../index.php"</script>';

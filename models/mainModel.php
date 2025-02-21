@@ -16,10 +16,8 @@ class MainModel extends Model{
             return $stmt->fetchAll();
         }
         catch (Exception $e){ 
-            echo "<script>
-                    alert('{$e->getMessage()}');
-                    window.location.href = '{$_ENV['URL']}error';
-                </script>";
+            $mensaje = json_encode($e->getMessage());
+            echo $mensaje;
             exit;
         }
     }

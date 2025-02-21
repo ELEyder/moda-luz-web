@@ -16,7 +16,6 @@
             ';
         } else {
             foreach($data as $row){
-                session_start();
                 $_SESSION['IdUsuario'] = $row['IdUsuario'];
                 $_SESSION['IdRol'] = $row['IdRol'];
                 $_SESSION['Nombres'] = $row['Nombres'];

@@ -1,7 +1,7 @@
-<?php session_start()?>
 <html lang="es">
     <head>
         <?php require_once("views/head.php") ?>
+        <link rel="stylesheet" href="content/styles/catalogo.css">
     </head>
     <body>
         <?php require_once 'views/header.php' ?>
@@ -10,11 +10,9 @@
         </main>
         <section class="catalogo">
             <div class="contenido">
-            <h1 class="nuestras-prendas">Nuestras Prendas:</h1>
-            <div class="catalogo">
+                <div class="catalogo">
+                <h1 class="nuestras-prendas">Nuestras Prendas:</h1>
             <?php
-            $cardsFilas = 4;
-            // Extraemos todas las filas de la tabla
             foreach ($data as $row) {
                 $id = $row['IdPrenda'];
                 $nombre = $row['NombrePrenda'];
@@ -22,12 +20,8 @@
                 $img = "content/img/catalogo/" . $id . ".webp";
                 $categoria = $row['NombreCategoria'];
                 $sexo = $row['NombreSexo'];
-                if ($id == '1' or ((($id - 1) % $cardsFilas) == 0)){
-                    echo '<div class="fila">';
-                }
                 echo '
                 <div class="prenda">
-                    
                     <div class="imagen">
                         <img class="prenda" src="'.$img.'" alt="'.$nombre.'">
                     </div>
@@ -48,11 +42,9 @@
                     </a>
                 </div>
             ';
-            if ($id % $cardsFilas == 0){
-                echo '</div>';
-            }
             }
             ?>
+            </div>
             </div>
             </div>
         </section>

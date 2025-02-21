@@ -47,7 +47,6 @@
     </main>
     <script src="scripts/script.js"></script>
     <?php
-    	session_start();
         if (isset($_SESSION['nombre'])){
             echo '<script>alert("Cerrando ventana.");</script>';
             session_destroy();

@@ -1,4 +1,14 @@
 <?php
+session_set_cookie_params([
+  'lifetime' => 86400,
+  'path' => '/',
+  'domain' => $_SERVER['HTTP_HOST'],
+  'secure' => false,
+  'httponly' => true,
+  'samesite' => 'Lax'
+]);
+
+session_start();
 
 require_once('vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

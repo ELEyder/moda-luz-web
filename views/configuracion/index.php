@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -115,7 +112,7 @@ session_start();
                                         <input id="nombreInput" class="edit-input" type="text" name="nombre" placeholder="Nombre" style="display: none;">
                                         </td>
                                         <td>
-                                            <img id="editnombre" src="content/img/boligrafo.png" alt="Editar" onclick="editarTexto('nombre')">
+                                            <img id="editnombre" src="content/img/icons/boligrafo.png" alt="Editar" onclick="editarTexto('nombre')">
                                         </td>
                                     </tr>
                                     <tr>
@@ -127,7 +124,7 @@ session_start();
                                             " type="text" name="apellido" placeholder="Apellido" style="display: none;">
                                         </td>
                                         <td>
-                                            <img id="editapellido" src="content/img/boligrafo.png" alt="Editar" onclick="editarTexto('apellido')">
+                                            <img id="editapellido" src="content/img/icons/boligrafo.png" alt="Editar" onclick="editarTexto('apellido')">
                                         </td>
                                     </tr>
                                     <tr>
@@ -138,7 +135,7 @@ session_start();
                                             <input id="correoInput" class="edit-input" type="text" name="correo" placeholder="Correo" style="display: none;">
                                         </td>
                                         <td>
-                                            <img id="editcorreo" src="content/img/boligrafo.png" alt="Editar" onclick="editarTexto('correo')">
+                                            <img id="editcorreo" src="content/img/icons/boligrafo.png" alt="Editar" onclick="editarTexto('correo')">
                                         </td>
                                     </tr>
                                     <tr>
@@ -149,7 +146,7 @@ session_start();
                                             <input id="telefonoInput" class="edit-input" type="text" name="telefono" placeholder="Teléfono" style="display: none;">
                                         </td>
                                         <td>
-                                            <img id="edittelefono" src="content/img/boligrafo.png" alt="Editar" onclick="editarTexto('telefono')">
+                                            <img id="edittelefono" src="content/img/icons/boligrafo.png" alt="Editar" onclick="editarTexto('telefono')">
                                         </td>
                                     </tr>
                                 </table>

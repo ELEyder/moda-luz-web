@@ -81,7 +81,7 @@ if (isset($_SESSION["Nombres"])) {
 					</div>
 					<div class='dropdown' id='dropdown'>
 						<div class='dropdown-content'>
-							<a href='form'>Iniciar Sesion</a>
+							<a href='form'>Regístrate</a>
 						</div>
 					</div>
 				</div>
